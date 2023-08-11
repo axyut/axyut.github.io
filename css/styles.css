@@ -34,6 +34,13 @@ body {
   background: var(--clr-green-dark);
 }
 
+a {
+  color: var(--clr-white);
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
 #logo {
   width: 100px;
 }
@@ -45,7 +52,7 @@ header {
   top: 0;
   left: 0;
   padding: 0.4rem 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 0px solid rgba(255, 255, 255, 0.1);
 }
 header nav {
   /* background-color: var(--clr-black); */
