@@ -154,8 +154,8 @@ main {
   position: absolute;
   top: 1.94%;
   left: 50%;
-  width: 222%;
-  height: 177%;
+  width: 120%;
+  height: 180%;
   z-index: 1;
 }
 
@@ -439,7 +439,7 @@ main {
   }
 }
 
-@media (max-width: 725px) {
+@media (max-width: 768px) {
   .text h1 {
     font-size: 5rem;
     line-height: 1.1;
@@ -481,6 +481,91 @@ main {
     width: initial;
     height: 355%;
   }
+
+  .mountain_1 {
+    width: initial;
+    height: 140%;
+  }
+
+  .mountain_2 {
+    width: initial;
+    height: 140%;
+  }
+
+  .mountain_3 {
+    width: initial;
+    height: 140%;
+  }
+
+  .mountain_4 {
+    width: initial;
+    height: 140%;
+  }
+
+  .mountain_5 {
+    width: initial;
+    height: 140%;
+  }
+
+  .mountain_6 {
+    width: initial;
+    height: 140%;
+  }
+
+  .mountain_7 {
+    width: initial;
+    height: 140%;
+  }
+
+  .mountain_8 {
+    width: initial;
+    height: 140%;
+  }
+
+  .mountain_9 {
+    width: initial;
+    height: 140%;
+  }
+
+  .mountain_10 {
+    width: initial;
+    height: 140%;
+  }
+
+  .fog_1 {
+    width: initial;
+    height: 100%;
+  }
+
+  .fog_2 {
+    width: initial;
+    height: 100%;
+  }
+
+  .fog_3 {
+    width: initial;
+    height: 100%;
+  }
+
+  .fog_4 {
+    width: initial;
+    height: 100%;
+  }
+
+  .fog_5 {
+    width: initial;
+    height: 100%;
+  }
+
+  .fog_6 {
+    width: initial;
+    height: 100%;
+  }
+
+  .fog_7 {
+    width: initial;
+    height: 100%;
+  }
 }
 
 @media (max-width: 520px) {
@@ -491,4 +576,16 @@ main {
   .text h2 {
     font-size: 2.5rem;
   }
+}
+
+@media (max-width: 420px) {
+  .text h1 {
+    font-size: 3rem;
+  }
+
+  .text h2 {
+    font-size: 2rem;
+  }
+
+  /* responsive main on mobile */
 }
