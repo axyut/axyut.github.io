@@ -11,7 +11,7 @@
     <title>Profile</title>
   </head>
   <body>
-    <header>
+    <header class="hide">
       <nav>
         <a id="logo" href="index.html">axyut</a>
         <ul>
@@ -31,26 +31,32 @@
       </nav>
     </header>
     <main>
-      <div class="vignette"></div>
+      <div class="vignette hide"></div>
       <img
         src="./assets/front-page/background.jpg"
         data-speedx="0.017"
         data-speedy="0.18"
         alt="bg"
+        data-speedz="0.05"
+        data-distance="-200"
         class="parallax bg_img"
       />
       <img
         src="./assets/front-page/fog_7.png"
-        data-speedx="0.27"
+        data-speedx="0.07"
         data-speedy="0.22"
         alt=""
+        data-speedz="0.005"
+        data-distance="850"
         class="parallax fog_7"
       />
       <img
         src="./assets/front-page/mountain_10.png"
         alt=""
         data-speedx="0.055"
+        data-speedz="0.05"
         data-speedy="0.205"
+        data-distance="1050"
         class="parallax mountain_10"
       />
       <img
@@ -58,33 +64,50 @@
         alt=""
         data-speedx="0.095"
         data-speedy="0.09"
+        data-speedz="0.005"
+        data-distance="1250"
         class="parallax fog_6"
       />
       <img
         src="./assets/front-page/mountain_9.png"
         data-speedx="0.05"
+        data-speedz="0.05"
         data-speedy="0.115"
+        data-distance="1450"
         class="parallax mountain_9"
       />
       <img
         src="./assets/front-page/mountain_8.png"
         data-speedx="0.09"
         data-speedy="0.11"
+        data-speedz="0.05"
+        data-distance="1650"
         class="parallax mountain_8"
       />
       <img
         src="./assets/front-page/fog_5.png"
         data-speedx="0.09"
         data-speedy="0.105"
+        data-speedz="0.005"
+        data-distance="1850"
         class="parallax fog_5"
       />
       <img
         src="./assets/front-page/mountain_7.png"
         data-speedx="0.08"
         data-speedy="0.1"
+        data-speedz="0.05"
+        data-distance="2050"
         class="parallax mountain_7"
       />
-      <div data-speedx="0.07" data-speedy="0.3" class="text parallax">
+
+      <div
+        data-speedx="0.07"
+        data-speedz="0.05"
+        data-speedy="0.3"
+        data-distance="2250"
+        class="text parallax"
+      >
         <h2>Achyut</h2>
         <h1>Koirala</h1>
       </div>
@@ -92,65 +115,91 @@
         src="./assets/front-page/mountain_6.png"
         data-speedx="0.015"
         data-speedy="0.01"
+        data-speedz="0.05"
+        data-distance="2450"
         class="parallax mountain_6"
       />
       <img
         src="./assets/front-page/fog_4.png"
-        data-speedx="0.135"
+        data-speedx="0.035"
         data-speedy="0.07"
+        data-speedz="0.005"
+        data-distance="2650"
         class="parallax fog_4"
       />
       <img
         src="./assets/front-page/mountain_5.png"
         data-speedx="0.081"
         data-speedy="0.05"
+        data-speedz="0.05"
+        data-distance="2850"
         class="parallax mountain_5"
       />
       <img
         src="./assets/front-page/fog_3.png"
         data-speedx="0.059"
         data-speedy="0.031"
+        data-speedz="0.005"
+        data-distance="3050"
         class="parallax fog3"
       />
       <img
         src="./assets/front-page/mountain_4.png"
         data-speedx="0.04"
         data-speedy="0.019"
+        data-speedz="0.05"
+        data-distance="3250"
         class="parallax mountain_4"
       />
       <img
         src="./assets/front-page/mountain_3.png"
         data-speedx="0.085"
         data-speedy="0.011"
+        data-speedz="0.05"
+        data-distance="3450"
         class="parallax mountain_3"
       />
       <img
         src="./assets/front-page/fog_2.png"
         data-speedx="0.0235"
         data-speedy="0.009"
+        data-speedz="0.005"
+        data-distance="3650"
         class="parallax fog_2"
       />
       <img
         src="./assets/front-page/mountain_2.png"
         data-speedx="0.03"
         data-speedy="0.03"
+        data-speedz="0.05"
+        data-distance="3850"
         class="parallax mountain_2"
       />
       <img
         src="./assets/front-page/mountain_1.png"
         data-speedx="0.027"
         data-speedy="0.027"
+        data-speedz="0.05"
+        data-distance="4050"
         class="parallax mountain_1"
       />
-      <img src="./assets/front-page/sun_rays.png" class="sun_rays" />
+      <img src="./assets/front-page/sun_rays.png" class="sun_rays hide" />
       <img src="./assets/front-page/black_shadow.png" class="black_shadow" />
       <img
         src="./assets/front-page/fog_1.png"
         data-speedx="0.012"
         data-speedy="0.012"
+        data-speedz="0.005"
+        data-distance="4250"
         class="parallax fog_1"
       />
     </main>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+      integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="index.js"></script>
   </body>
 </html>
