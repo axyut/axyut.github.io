@@ -46,11 +46,11 @@ timeline
     "1.8"
   );
 
-if (window.innerWidth < 768) {
-  main.style.maxHeight = `${window.innerHeight * 0.6}px`;
-} else {
-  main.style.maxHeight = `${window.innerHeight * 1.6}px`;
-}
+// if (window.innerWidth < 768) {
+//   main.style.maxHeight = `${window.innerHeight * 0.6}px`;
+// } else {
+//   main.style.maxHeight = `${window.innerHeight * 1.6}px`;
+// }
 
 let xValue = 0,
   yValue = 0;

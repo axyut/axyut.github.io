@@ -18,7 +18,8 @@
   --clr-dark-light: hsl(210, 2%, 22%);
   --clr-dark-dark: hsl(220, 8%, 15%);
   --clr-black: #222;
-  --clr-white: #fff;
+  --clr-white-2: #d2dae2;
+  --clr-white-1: #e2d2d2;
   --ff-primary: "Poppins", sans-serif;
 }
 
@@ -35,7 +36,7 @@ body {
 }
 
 a {
-  color: var(--clr-white);
+  color: var(--clr-white-2);
   text-decoration: none;
   font-size: 1rem;
   font-weight: 300;
@@ -76,7 +77,7 @@ header nav ul {
 }
 
 header ul a {
-  color: var(--clr-black);
+  color: var(--clr-white-2);
   text-decoration: none;
   font-size: 1rem;
   font-weight: 300;
@@ -437,16 +438,70 @@ main {
   .text h2 {
     font-size: 4.7rem;
   }
+  .bg-img {
+    width: initial;
+    height: 355%;
+  }
+
+  .mountain_1 {
+    width: initial;
+    height: 100%;
+  }
+
+  .mountain_2 {
+    width: initial;
+    height: 100%;
+  }
+
+  .mountain_3 {
+    width: initial;
+    height: 100%;
+  }
+
+  .mountain_4 {
+    width: initial;
+    height: 100%;
+  }
+
+  .mountain_5 {
+    width: initial;
+    height: 100%;
+  }
+
+  .mountain_6 {
+    width: initial;
+    height: 100%;
+  }
+
+  .mountain_7 {
+    width: initial;
+    height: 100%;
+  }
+
+  .mountain_8 {
+    width: initial;
+    height: 100%;
+  }
+
+  .mountain_9 {
+    width: initial;
+    height: 100%;
+  }
+
+  .mountain_10 {
+    width: initial;
+    height: 100%;
+  }
 }
 
 @media (max-width: 768px) {
   .text h1 {
-    font-size: 5rem;
+    font-size: 4rem;
     line-height: 1.1;
   }
 
   .text h2 {
-    font-size: 4rem;
+    font-size: 3rem;
     line-height: 1.1;
   }
 
@@ -476,96 +531,6 @@ main {
     width: 30px;
     height: 30px;
   }
-
-  .bg-img {
-    width: initial;
-    height: 355%;
-  }
-
-  .mountain_1 {
-    width: initial;
-    height: 140%;
-  }
-
-  .mountain_2 {
-    width: initial;
-    height: 140%;
-  }
-
-  .mountain_3 {
-    width: initial;
-    height: 140%;
-  }
-
-  .mountain_4 {
-    width: initial;
-    height: 140%;
-  }
-
-  .mountain_5 {
-    width: initial;
-    height: 140%;
-  }
-
-  .mountain_6 {
-    width: initial;
-    height: 140%;
-  }
-
-  .mountain_7 {
-    width: initial;
-    height: 140%;
-  }
-
-  .mountain_8 {
-    width: initial;
-    height: 140%;
-  }
-
-  .mountain_9 {
-    width: initial;
-    height: 140%;
-  }
-
-  .mountain_10 {
-    width: initial;
-    height: 140%;
-  }
-
-  .fog_1 {
-    width: initial;
-    height: 100%;
-  }
-
-  .fog_2 {
-    width: initial;
-    height: 100%;
-  }
-
-  .fog_3 {
-    width: initial;
-    height: 100%;
-  }
-
-  .fog_4 {
-    width: initial;
-    height: 100%;
-  }
-
-  .fog_5 {
-    width: initial;
-    height: 100%;
-  }
-
-  .fog_6 {
-    width: initial;
-    height: 100%;
-  }
-
-  .fog_7 {
-    width: initial;
-    height: 100%;
-  }
 }
 
 @media (max-width: 520px) {
@@ -575,6 +540,46 @@ main {
 
   .text h2 {
     font-size: 2.5rem;
+  }
+
+  .mountain_1 {
+    top: 80%;
+  }
+
+  .mountain_2 {
+    top: 90%;
+  }
+
+  .mountain_3 {
+    top: 80%;
+  }
+
+  .mountain_4 {
+    top: 94%;
+  }
+
+  .mountain_5 {
+    top: 85%;
+  }
+
+  .mountain_6 {
+    top: 60%;
+  }
+
+  .mountain_7 {
+    top: 50%;
+  }
+
+  .mountain_8 {
+    top: 50%;
+  }
+
+  .mountain_9 {
+    top: 50%;
+  }
+
+  .mountain_10 {
+    top: 50%;
   }
 }
 
