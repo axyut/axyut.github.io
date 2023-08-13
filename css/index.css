@@ -1,142 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
 
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* dark mode variables */
-:root {
-  --clr-white: #fff;
-  --clr-red-dark: hsl(360, 67%, 44%);
-  --clr-red-light: hsl(360, 71%, 66%);
-  --clr-green-dark: hsl(125, 23%, 18%);
-  --clr-green-light: hsl(125, 71%, 66%);
-  --clr-dark-light: hsl(210, 2%, 22%);
-  --clr-dark-dark: hsl(220, 8%, 15%);
-  --clr-black: #222;
-  --clr-white-2: #d2dae2;
-  --clr-white-1: #e2d2d2;
-  --ff-primary: "Poppins", sans-serif;
-}
-
-body {
-  font-family: var(--ff-primary);
-  font-size: 1rem;
-  line-height: 1.5;
-  color: var(--clr-white);
-  background: var(--clr-black);
-}
-
-::selection {
-  background: var(--clr-green-dark);
-}
-
-a {
-  color: var(--clr-white-2);
-  text-decoration: none;
-  font-size: 1rem;
-  font-weight: 300;
-}
-
-#logo {
-  width: 100px;
-  color: var(--clr-white);
-  text-decoration: none;
-  font-size: 1rem;
-  font-weight: 300;
-}
-
-header {
-  width: 100%;
-  position: absolute;
-  z-index: 9999;
-  top: 0;
-  left: 0;
-  padding: 0.4rem 0;
-  border-bottom: 0px solid rgba(255, 255, 255, 0.1);
-}
-header nav {
-  /* background-color: var(--clr-black); */
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 0 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-header nav ul {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  list-style: none;
-}
-
-header ul a {
-  color: var(--clr-white-2);
-  text-decoration: none;
-  font-size: 1rem;
-  font-weight: 300;
-  padding: 0 1.5rem;
-  border-radius: 0.25rem;
-  text-transform: uppercase;
-}
-
-.search {
-  font-size: 1.05rem;
-  padding: 0 3rem;
-}
-.hamburger {
-  padding-left: 1.5rem;
-}
-
-.hamburger a {
-  padding: 0;
-  width: 37px;
-  height: 37px;
-  border-radius: 50%;
-  display: flex;
-  background-color: var(--clr-dark-light);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  justify-content: center;
-  align-items: center;
-}
-.hamburger .bar {
-  width: 52%;
-  height: 1.3px;
-  color: #fff;
-  background-color: var(--clr-white);
-  border-radius: 2px;
-  position: relative;
-  transition: all 0.3s ease-in-out;
-}
-
-.hamburger .bar::before,
-.hamburger .bar::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  width: 60%;
-  height: 100%;
-  transform: translateX(-50%);
-  background-color: inherit;
-  border-radius: 2px;
-  transition: all 0.3s ease-in-out;
-}
-
-.hamburger .bar::before {
-  top: -4.5px;
-}
-
-.hamburger .bar::after {
-  top: 4.5px;
-}
-
 main {
   position: relative;
   background-color: var(--clr-black);
@@ -432,11 +295,11 @@ main {
 
 @media (max-width: 1100px) {
   .text h1 {
-    font-size: 5.8rem;
+    font-size: 6.2rem;
   }
 
   .text h2 {
-    font-size: 4.7rem;
+    font-size: 5rem;
   }
   .bg-img {
     width: initial;
@@ -446,62 +309,72 @@ main {
   .mountain_1 {
     width: initial;
     height: 100%;
+    top: 80%;
   }
 
   .mountain_2 {
     width: initial;
     height: 100%;
+    top: 100%;
   }
 
   .mountain_3 {
     width: initial;
     height: 100%;
+    top: 80%;
   }
 
   .mountain_4 {
     width: initial;
     height: 100%;
+    top: 104%;
   }
 
   .mountain_5 {
     width: initial;
     height: 100%;
+    top: 95%;
   }
 
   .mountain_6 {
     width: initial;
     height: 100%;
+    top: 70%;
   }
 
   .mountain_7 {
     width: initial;
     height: 100%;
+    top: 60%;
   }
 
   .mountain_8 {
     width: initial;
     height: 100%;
+    top: 62%;
   }
 
   .mountain_9 {
     width: initial;
     height: 100%;
+    top: 64%;
   }
 
   .mountain_10 {
     width: initial;
     height: 100%;
+    top: 56%;
   }
 }
 
 @media (max-width: 768px) {
   .text h1 {
-    font-size: 4rem;
+    font-size: 5rem;
     line-height: 1.1;
   }
 
   .text h2 {
-    font-size: 3rem;
+    font-size: 4.2rem;
     line-height: 1.1;
   }
 
@@ -535,11 +408,11 @@ main {
 
 @media (max-width: 520px) {
   .text h1 {
-    font-size: 3.3rem;
+    font-size: 3.9rem;
   }
 
   .text h2 {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
   }
 
   .mountain_1 {
@@ -585,11 +458,11 @@ main {
 
 @media (max-width: 420px) {
   .text h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
 
   .text h2 {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 
   /* responsive main on mobile */
