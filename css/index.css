@@ -1,8 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
 
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::selection {
+  background: var(--clr-green-dark);
+}
+
 main {
   position: relative;
-  background-color: var(--clr-black);
+  background-color: var(--clr-bg);
   height: 100vh;
   overflow: hidden;
   width: 100vw;

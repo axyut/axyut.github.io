@@ -1,13 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
 
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 /* dark mode variables */
 :root {
   --clr-white: #fff;
@@ -18,22 +10,22 @@
   --clr-dark-light: hsl(210, 2%, 22%);
   --clr-dark-dark: hsl(220, 8%, 15%);
   --clr-dark-darker: hsl(240, 1%, 15%);
+  --clr-bg: #141418;
   --clr-black: #222;
   --clr-white-2: #d2dae2;
   --clr-white-1: #e2d2d2;
   --ff-primary: "Poppins", sans-serif;
+  --text-primary: #b6b6b6;
+  --text-secondary: #ececec;
+  --bg-primary: #23232e;
+  --bg-secondary: #141418;
 }
-
 body {
   font-family: var(--ff-primary);
   font-size: 1rem;
   line-height: 1.5;
   color: var(--clr-white);
-  background: var(--clr-black);
-}
-
-::selection {
-  background: var(--clr-green-dark);
+  background: var(--clr-bg);
 }
 
 a {
@@ -136,12 +128,4 @@ header ul a {
 
 .hamburger .bar::after {
   top: 4.5px;
-}
-
-main {
-  position: relative;
-  background-color: var(--clr-black);
-  height: 100vh;
-  overflow: hidden;
-  width: 100vw;
 }
