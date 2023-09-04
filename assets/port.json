@@ -1,18 +1,18 @@
 {
 	"basics": {
 		"name": "Achyut Koirala",
-		"label": "Developer.",
+		"label": "Backend Developer.",
 		"picture": "",
-		"email": "aoogleak@gmail.com",
+		"email": "mail@achyutkoirala.com.np",
 		"phone": "",
-		"website": "https://outrageous-dove-jewelry.cyclic.app/",
-		"summary": "Backend web applications developer, developing RESTful APIs",
+		"website": "https://achyutkoirala.com.np",
+		"summary": "Backend web applications developer, developing REST|GraphQL APIs",
 		"location": {
 			"address": "",
 			"postalCode": "",
 			"city": "Bharatpur",
 			"countryCode": "NP",
-			"region": ""
+			"region": "Bagmati Province"
 		},
 		"profiles": [
 			{
@@ -34,6 +34,19 @@
 	},
 	"work": [
 		{
+			"company": "Hyperce",
+			"position": "Backend Developer",
+			"location": "Wilmington, DE United States",
+			"website": "https://www.hyperce.io/",
+			"startDate": "Aug 2023",
+			"endDate": "Currently working",
+			"summary": "Hyperce is an E-commerce suite partner for elevating businesses. I worked as Backend Developer with technologies like Vendure, GraphQL, Typescript, Angular and TypeORM and learned internal mechanism of e-commerce platform as well as working of a tech-startup",
+			"highlights": [
+				"Learnt more about strictly typed languages",
+				"Gained knowlege on E-commerce business techniques and terminologies"
+			]
+		},
+		{
 			"company": "A-CET Computers",
 			"position": "Computer Hardware Technician",
 			"location": "Bharatpur, Nepal",
@@ -47,7 +60,6 @@
 				"Customer discovery"
 			]
 		},
-
 		{
 			"company": "",
 			"position": "",
@@ -76,15 +88,21 @@
 			"startDate": "February 2022",
 			"endDate": "2026",
 			"gpa": "",
-			"courses": []
+			"courses": ["MERN Stack Web development Bootcamp"]
 		}
 	],
 	"activities": [
 		{
 			"institution": "MERN Stack Web Development Bootcamp",
 			"position": "Participant",
-			"startDate": "January 2022",
-			"endDate": "March 2015"
+			"summary": "Learned backend development with Express, Node.js and MongoDB",
+			"timeframe": "January 2022, 1 month",
+		},
+		{
+			"institution": "OSM Hackfest 2023",
+			"position": "Participant",
+			"summary":"Using OpenStreetMap’s API we built a plant management system to streamline all the forest-fires, deforestation issues and other mishaps using Node.js. More on GitHub.",
+			"timeframe": "June 2023, 2 days",
 		}
 	],
 
@@ -158,21 +176,22 @@
 	"skills": [
 		{
 			"Tech skills": [
-				"Backend Web Development with Node.js and Go",
-				"Presentation, Project Management and Report Writing",
-				"Understanding of REST APIs, MongoDB and Web Security ",
-				"Basic Knowledge of Networking and Cloud Components",
-				"Troubleshooting Computers in Genera"
+				"Backend Web Development with Node.js and Go. (Express.js, Nest.js, Fiber, mux)",
+				"Understanding of REST, GraphQL APIs, database and Web Security. (PostgreSQL, MongoDB, Redis)",
+				"Basic Knowledge of Deployment and Cloud Components. (Azure, Docker, Kubernetes)",
+				"Penetration Testing of APIs.",
+				"Troubleshooting Computers, Project Management and Report writing.",
+
 			]
 		},
-		{ "soft skills": ["Communication with Client", "Public Speaking"] }
+		{ "soft skills": ["Project Management","Communication with Client", "Public Speaking"] }
 	],
 
-	"projects and works": [
+	"top_projects": [
 		{
-			"name": "Porfolio Website",
+			"name": "Blogging Website",
 			"type": "Web Application",
-			"url": "https://outrageous-dove-jewelry.cyclic.app/",
+			"url": "https://github.com/axyut/blog_web",
 			"overview": "A Blog website for my projects and articles related to IT industry. It is written in Node.js and NoSQL database MongoDB is integrated as database. This website is live on the internet on Cyclic app and MongoDB Atlas, AWS cluster.",
 			"key takeways": "Pagination Function, Search-box Function, Mailing Function, Backend MongoDb database"
 		}
