@@ -17,6 +17,8 @@
     <title>Profile</title>
   </head>
   <body>
+    <div id="preLoader"></div>
+
     <header class="hide">
       <nav>
         <a id="logo" href="https://achyutkoirala.com.np/">HOME</a>
@@ -208,5 +210,11 @@
       referrerpolicy="no-referrer"
     ></script>
     <script src="./js/index.js"></script>
+    <script>
+      window.addEventListener("load", () => {
+        const preLoader = document.querySelector("#preLoader");
+        preLoader.style.display = "none";
+      });
+    </script>
   </body>
 </html>
