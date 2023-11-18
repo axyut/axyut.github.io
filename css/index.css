@@ -17,7 +17,7 @@ main {
   background-color: var(--clr-bg);
   height: 100vh;
   overflow: hidden;
-  width: 100vw;
+  width: 100%;
 }
 
 .parallax {
@@ -271,7 +271,7 @@ main {
   pointer-events: none;
 }
 
-.back_shadow {
+.black_shadow {
   position: absolute;
   z-index: 20;
   bottom: 0%;
@@ -292,7 +292,7 @@ main {
 
 .vignette {
   position: absolute;
-  z-index: 100;
+  z-index: 21;
   top: 0%;
   left: 0%;
   width: 100%;

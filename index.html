@@ -13,208 +13,647 @@
       class="js-favicon"
     />
     <link rel="stylesheet" href="./css/root.css" />
+    <link rel="stylesheet" href="./css/portfolio.css" />
     <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/pageTransform.css" />
     <title>Profile</title>
-  </head>
-  <body>
-    <div id="preLoader"></div>
-
-    <header class="hide">
-      <nav>
-        <a id="logo" href="https://achyutkoirala.com.np/">HOME</a>
-        <ul>
-          <li><a href="./pages/portfolio.html">Portfolio</a></li>
-          <!-- <li><a href="index.html">Connect</a></li> -->
-          <li><a href="./pages/blogs.html">Blogs</a></li>
-          <!-- <li class="search">
-            <a href="about.html"
-              ><i class="fa-solid fa-magnifying-glass"></i
-            ></a>
-          </li>
-          <li class="hamburger">
-            <a href="#">
-              <div class="bar"></div>
-            </a>
-          </li> -->
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <div class="vignette hide"></div>
-      <img
-        src="./assets/front-page/background.jpg"
-        data-speedx="0.017"
-        data-speedy="0.18"
-        alt="bg"
-        data-speedz="0.05"
-        data-distance="-200"
-        class="parallax bg_img"
-      />
-      <img
-        src="./assets/front-page/fog_7.png"
-        data-speedx="0.07"
-        data-speedy="0.22"
-        alt=""
-        data-speedz="0.005"
-        data-distance="850"
-        class="parallax fog_7"
-      />
-      <img
-        src="./assets/front-page/mountain_10.png"
-        alt=""
-        data-speedx="0.055"
-        data-speedz="0.05"
-        data-speedy="0.205"
-        data-distance="1050"
-        class="parallax mountain_10"
-      />
-      <img
-        src="./assets/front-page/fog_6.png"
-        alt=""
-        data-speedx="0.095"
-        data-speedy="0.09"
-        data-speedz="0.005"
-        data-distance="1250"
-        class="parallax fog_6"
-      />
-      <img
-        src="./assets/front-page/mountain_9.png"
-        data-speedx="0.05"
-        data-speedz="0.05"
-        data-speedy="0.115"
-        data-distance="1450"
-        class="parallax mountain_9"
-      />
-      <img
-        src="./assets/front-page/mountain_8.png"
-        data-speedx="0.078"
-        data-speedy="0.11"
-        data-speedz="0.05"
-        data-distance="1650"
-        class="parallax mountain_8"
-      />
-      <img
-        src="./assets/front-page/fog_5.png"
-        data-speedx="0.09"
-        data-speedy="0.105"
-        data-speedz="0.005"
-        data-distance="1850"
-        class="parallax fog_5"
-      />
-      <img
-        src="./assets/front-page/mountain_7.png"
-        data-speedx="0.06"
-        data-speedy="0.1"
-        data-speedz="0.05"
-        data-distance="2050"
-        class="parallax mountain_7"
-      />
-
-      <div
-        data-speedx="0.07"
-        data-speedz="0.05"
-        data-speedy="0.3"
-        data-distance="2250"
-        class="text parallax"
-      >
-        <h2>Achyut</h2>
-        <h1>Koirala</h1>
-      </div>
-      <img
-        src="./assets/front-page/mountain_6.png"
-        data-speedx="0.065"
-        data-speedy="0.01"
-        data-speedz="0.05"
-        data-distance="2450"
-        class="parallax mountain_6"
-      />
-      <img
-        src="./assets/front-page/fog_4.png"
-        data-speedx="0.065"
-        data-speedy="0.07"
-        data-speedz="0.005"
-        data-distance="2650"
-        class="parallax fog_4"
-      />
-      <img
-        src="./assets/front-page/mountain_5.png"
-        data-speedx="0.061"
-        data-speedy="0.05"
-        data-speedz="0.05"
-        data-distance="2850"
-        class="parallax mountain_5"
-      />
-      <img
-        src="./assets/front-page/fog_3.png"
-        data-speedx="0.059"
-        data-speedy="0.031"
-        data-speedz="0.005"
-        data-distance="3050"
-        class="parallax fog3"
-      />
-      <img
-        src="./assets/front-page/mountain_4.png"
-        data-speedx="0.04"
-        data-speedy="0.019"
-        data-speedz="0.05"
-        data-distance="3250"
-        class="parallax mountain_4"
-      />
-      <img
-        src="./assets/front-page/mountain_3.png"
-        data-speedx="0.035"
-        data-speedy="0.011"
-        data-speedz="0.05"
-        data-distance="3450"
-        class="parallax mountain_3"
-      />
-      <img
-        src="./assets/front-page/fog_2.png"
-        data-speedx="0.0235"
-        data-speedy="0.009"
-        data-speedz="0.005"
-        data-distance="3650"
-        class="parallax fog_2"
-      />
-      <img
-        src="./assets/front-page/mountain_2.png"
-        data-speedx="0.03"
-        data-speedy="0.03"
-        data-speedz="0.05"
-        data-distance="3850"
-        class="parallax mountain_2"
-      />
-      <img
-        src="./assets/front-page/mountain_1.png"
-        data-speedx="0.037"
-        data-speedy="0.027"
-        data-speedz="0.05"
-        data-distance="4050"
-        class="parallax mountain_1"
-      />
-      <img src="./assets/front-page/sun_rays.png" class="sun_rays hide" />
-      <img src="./assets/front-page/black_shadow.png" class="black_shadow" />
-      <img
-        src="./assets/front-page/fog_1.png"
-        data-speedx="0.062"
-        data-speedy="0.012"
-        data-speedz="0.005"
-        data-distance="4250"
-        class="parallax fog_1"
-      />
-    </main>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
-      integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script src="./js/index.js"></script>
     <script>
       window.addEventListener("load", () => {
         const preLoader = document.querySelector("#preLoader");
         preLoader.style.display = "none";
       });
     </script>
+  </head>
+  <body class="main-content">
+    <div id="preLoader"></div>
+
+    <!-- Nav-Bar -->
+    <!-- <header class="hide">
+      <nav>
+        <a id="logo" href="https://achyutkoirala.com.np/">HOME</a>
+        <ul>
+          <li><a href="./pages/portfolio.html">Portfolio</a></li>
+          <li><a href="./pages/blogs.html">Blogs</a></li>
+        </ul>
+      </nav>
+    </header> -->
+    <div class="controlls hide">
+      <div class="control control-1" data-id="home">Home</div>
+      <div class="control control-3" data-id="portfolio">Portfolio</div>
+    </div>
+    <main>
+      <div id="home">
+        <div class="vignette hide"></div>
+        <img
+          src="./assets/front-page/background.jpg"
+          data-speedx="0.017"
+          data-speedy="0.18"
+          alt="bg"
+          data-speedz="0.05"
+          data-distance="-200"
+          class="parallax bg_img"
+        />
+        <img
+          src="./assets/front-page/fog_7.png"
+          data-speedx="0.07"
+          data-speedy="0.22"
+          alt=""
+          data-speedz="0.005"
+          data-distance="850"
+          class="parallax fog_7"
+        />
+        <img
+          src="./assets/front-page/mountain_10.png"
+          alt=""
+          data-speedx="0.055"
+          data-speedz="0.05"
+          data-speedy="0.205"
+          data-distance="1050"
+          class="parallax mountain_10"
+        />
+        <img
+          src="./assets/front-page/fog_6.png"
+          alt=""
+          data-speedx="0.095"
+          data-speedy="0.09"
+          data-speedz="0.005"
+          data-distance="1250"
+          class="parallax fog_6"
+        />
+        <img
+          src="./assets/front-page/mountain_9.png"
+          data-speedx="0.05"
+          data-speedz="0.05"
+          data-speedy="0.115"
+          data-distance="1450"
+          class="parallax mountain_9"
+        />
+        <img
+          src="./assets/front-page/mountain_8.png"
+          data-speedx="0.078"
+          data-speedy="0.11"
+          data-speedz="0.05"
+          data-distance="1650"
+          class="parallax mountain_8"
+        />
+        <img
+          src="./assets/front-page/fog_5.png"
+          data-speedx="0.09"
+          data-speedy="0.105"
+          data-speedz="0.005"
+          data-distance="1850"
+          class="parallax fog_5"
+        />
+        <img
+          src="./assets/front-page/mountain_7.png"
+          data-speedx="0.06"
+          data-speedy="0.1"
+          data-speedz="0.05"
+          data-distance="2050"
+          class="parallax mountain_7"
+        />
+
+        <div
+          data-speedx="0.07"
+          data-speedz="0.05"
+          data-speedy="0.3"
+          data-distance="2250"
+          class="text parallax"
+        >
+          <h2>Achyut</h2>
+          <h1>Koirala</h1>
+        </div>
+        <img
+          src="./assets/front-page/mountain_6.png"
+          data-speedx="0.065"
+          data-speedy="0.01"
+          data-speedz="0.05"
+          data-distance="2450"
+          class="parallax mountain_6"
+        />
+        <img
+          src="./assets/front-page/fog_4.png"
+          data-speedx="0.065"
+          data-speedy="0.07"
+          data-speedz="0.005"
+          data-distance="2650"
+          class="parallax fog_4"
+        />
+        <img
+          src="./assets/front-page/mountain_5.png"
+          data-speedx="0.061"
+          data-speedy="0.05"
+          data-speedz="0.05"
+          data-distance="2850"
+          class="parallax mountain_5"
+        />
+        <img
+          src="./assets/front-page/fog_3.png"
+          data-speedx="0.059"
+          data-speedy="0.031"
+          data-speedz="0.005"
+          data-distance="3050"
+          class="parallax fog_3"
+        />
+        <img
+          src="./assets/front-page/mountain_4.png"
+          data-speedx="0.04"
+          data-speedy="0.019"
+          data-speedz="0.05"
+          data-distance="3250"
+          class="parallax mountain_4"
+        />
+        <img
+          src="./assets/front-page/mountain_3.png"
+          data-speedx="0.035"
+          data-speedy="0.011"
+          data-speedz="0.05"
+          data-distance="3450"
+          class="parallax mountain_3"
+        />
+        <img
+          src="./assets/front-page/fog_2.png"
+          data-speedx="0.0235"
+          data-speedy="0.009"
+          data-speedz="0.005"
+          data-distance="3650"
+          class="parallax fog_2"
+        />
+        <img
+          src="./assets/front-page/mountain_2.png"
+          data-speedx="0.03"
+          data-speedy="0.03"
+          data-speedz="0.05"
+          data-distance="3850"
+          class="parallax mountain_2"
+        />
+        <img
+          src="./assets/front-page/mountain_1.png"
+          data-speedx="0.037"
+          data-speedy="0.027"
+          data-speedz="0.05"
+          data-distance="4050"
+          class="parallax mountain_1"
+        />
+        <img src="./assets/front-page/sun_rays.png" class="sun_rays hide" />
+        <img src="./assets/front-page/black_shadow.png" class="black_shadow" />
+        <img
+          src="./assets/front-page/fog_1.png"
+          data-speedx="0.062"
+          data-speedy="0.012"
+          data-speedz="0.005"
+          data-distance="4250"
+          class="parallax fog_1"
+        />
+      </div>
+    </main>
+    <section class="section sec3" id="portfolio">
+      <div id="divleft"></div>
+      <div id="divright"></div>
+      <div class="wrapper" id="middle">
+        <br />
+        <br />
+        <br />
+        <br />
+        <h2>Achyut Koirala</h2>
+        <p
+          style="
+            margin-top: -13px;
+            font-size: 12px;
+            font-family: 'Courier New', Courier, monospace;
+          "
+        >
+          <br />
+          I Work with APIs !!!
+        </p>
+        <br />
+        <br />
+        <p style="font-family: monospace; font-size: 18px">
+          I'm a Backend application developer who's passionate about Node.js and
+          Go, and I'm always eager to work on exciting projects.
+          <br /><br />
+          At present, I'm strengthening my knowledge on Deployment and Web-app
+          Security and also contributing to Open Source projects in Node.js and
+          Go in my free time. I've professional experience at E-commerce
+          development industry in Typescript and project-based experience in
+          Javascript and Golang.
+          <br /><br />
+          I'm a Microsoft Certified in Azure Fundamentals. I've been a computer
+          hardware technician, worked with different computer systems and have
+          knowledge of troubleshooting, backup and recovery, configuring
+          networks and Azure Cloud Services. I also carry Project Management and
+          Report Writing Skills. I do Bug Hunting and CTFs for fun and am
+          passionate to make a Career in Digital forensics.
+          <br /><br />
+
+          <br /><br /><br /><img
+            src="./assets/fav/profile.jpg"
+            alt="achyut_koirala_"
+            height="120px"
+            width="110px"
+            style="object-fit: contain; border-radius: 12%"
+          />
+          <br /><br />View my JSON Resume at
+          <a class="simpleAnchor" href="./assets/port.json" target="_blank"
+            >https://../portfolio.json</a
+          >
+
+          <br />Git
+          <a
+            class="simpleAnchor"
+            href="https://github.com/axyut"
+            target="_blank"
+            >https://github.com/axyut</a
+          >
+          <br />
+          Connect
+          <a
+            class="simpleAnchor"
+            href=" https://linkedin.com/in/axyut"
+            target="_blank"
+          >
+            https://linkedin.com/in/axyut</a
+          >
+          <br />
+          Tweet
+          <a
+            class="simpleAnchor"
+            href=" https://twitter.com/achyut_koirala_"
+            target="_blank"
+          >
+            https://twitter.com/achyut_koirala_</a
+          >
+          <br />View<a
+            class="simpleAnchor"
+            href="https://www.linkedin.com/in/axyut/details/certifications/"
+          >
+            Certifications</a
+          ><br /><a class="simpleAnchor" href="#contact">Contact at </a>
+          mail@achyutkoirala.com.np
+        </p>
+
+        <br />
+        <h1
+          style="
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+              sans-serif;
+          "
+        >
+          Major Projects
+          <!-- Resume Maker -->
+        </h1>
+
+        <ol>
+          <li>
+            <a
+              href="https://github.com/axyut/vanarakshak-osm-public"
+              target="_blank"
+              class="simpleAnchor"
+              >Vanarakshak</a
+            >
+          </li>
+
+          <li>
+            <a
+              href="https://github.com/axyut/applicant_tracking_system"
+              target="_blank"
+              class="simpleAnchor"
+              >Applicant Tracking System</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://github.com/axyut/phisphis"
+              target="_blank"
+              class="simpleAnchor"
+              >Phising Application</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://github.com/axyut/Chat-App-with-User-authentication"
+              target="_blank"
+              class="simpleAnchor"
+              >Anonymous Chat App</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://github.com/axyut/go-apis"
+              target="_blank"
+              class="simpleAnchor"
+              >Go APIs</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://github.com/axyut/Resume_maker"
+              target="_blank"
+              class="simpleAnchor"
+              >Resume Maker</a
+            >
+          </li>
+
+          Microservices
+          <ul>
+            <li>
+              <a
+                href="https://github.com/axyut/posting_app_microservice_nodejs"
+                target="_blank"
+                class="simpleAnchor"
+              >
+                Posts, Comments App</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://github.com/axyut/Ticketing_App"
+                target="_blank"
+                class="simpleAnchor"
+                >Ticket Booking App</a
+              >
+            </li>
+          </ul>
+        </ol>
+        <br /><br />
+        <h1
+          style="
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+              sans-serif;
+          "
+        >
+          Tech-Stack
+        </h1>
+
+        <ul>
+          <li>
+            Language
+            <ul>
+              <li>Node.js</li>
+              <li>Go</li>
+            </ul>
+          </li>
+          <li>
+            Frameworks and Templating
+            <ul>
+              <li>Express.js, Vite.js, Nest.js</li>
+              <li>Ejs, Hbs, Jekyll</li>
+            </ul>
+          </li>
+          <li>
+            Database
+            <ul>
+              <li>MongoDB, Redis</li>
+              <li>PostgreSQL (TypeORM)</li>
+            </ul>
+          </li>
+
+          <li>
+            Tools
+            <ul>
+              <li>Postman, Jest, Bash</li>
+              <li>Git and GitHub Actions</li>
+            </ul>
+          </li>
+          <li>
+            Cloud and Deployments
+            <ul>
+              <li>Docker Containers, K8s Cluster</li>
+            </ul>
+          </li>
+        </ul>
+
+        <br />
+
+        <br />
+        <h1
+          style="
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+              sans-serif;
+          "
+        >
+          Books
+        </h1>
+
+        <ul>
+          <li>Karnali Blues by Buddhi Sagar 🇳🇵</li>
+          <!-- <li>Let's Go Further by Alex Edwards</li> -->
+          <li>
+            The Web Application Hacker's Handbook, Dafydd Stuttard, Marcus Pinto
+          </li>
+          <li>American Kingpin by Nick Bilton</li>
+          <!-- <li>Summer Love, Saya by Subin Bhattrai 🇳🇵</li> -->
+          <!-- <li>How To Win Every Argument: The Use and Abuse of Logic</li> -->
+          <!-- <li>12 Rules For Life by Jordan B Peterson</li> -->
+          <!-- <li>The Power of Moments by Chip Heath and Dan Heath</li> -->
+          <li>Invention and Innovation: A Brief History of Hype and Failure</li>
+          <li>Future Crimes by Marc Goodman</li>
+        </ul>
+
+        <br /><br />
+        <div class="year_timeline">
+          <h1
+            style="
+              font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+                sans-serif;
+            "
+          >
+            Timeline
+          </h1>
+
+          <h2>2023</h2>
+
+          <ul>
+            <li class="timelineList">
+              <h3>
+                <a href="/port/<%=port._id%>" class="portAnchor">
+                  GraphQL or REST? Why not both?
+                </a>
+              </h3>
+            </li>
+            <li class="timelineList">
+              <h3>
+                <a href="/port/<%=port._id%>" class="portAnchor">
+                  Solving 1st Timer Issues with Docker containers and k8s
+                  cluster
+                </a>
+              </h3>
+            </li>
+            <li class="timelineList">
+              <h3>
+                <a href="/port/<%=port._id%>" class="portAnchor">
+                  Unit Tests with jest
+                </a>
+              </h3>
+            </li>
+          </ul>
+
+          <h2>2022</h2>
+
+          <ul>
+            <li class="timelineList">
+              <h3>
+                <a href="/port/<%=port._id%>" class="portAnchor"
+                  >Authentication with Oauth2.0
+                </a>
+              </h3>
+            </li>
+            <br />
+            <li class="timlineList">
+              <h3>
+                <a href="/port/<%=port._id%>" class="portAnchor"
+                  >Pagination and Scalable Search APIs with the use of RegEx
+                </a>
+              </h3>
+            </li>
+            <li class="timelineList">
+              <h3>
+                <a href="/port/<%=port._id%>" class="portAnchor"
+                  >API Penetration Testing, Getting Started with Burp Suite
+                </a>
+              </h3>
+            </li>
+            <li class="timelineList">
+              <h3>
+                <a href="/port/<%=port._id%>" class="portAnchor">
+                  Connect and Deploy Fullstack Nest.js React.js Vite.js app
+                </a>
+              </h3>
+            </li>
+          </ul>
+
+          <h2>2021</h2>
+
+          <ul>
+            <li class="timelineList">
+              <h3>
+                <a href="/port/<%=port._id%>" class="portAnchor"
+                  >Traffic Light Managament System with Arduino UNO
+                </a>
+              </h3>
+            </li>
+            <li class="timelineList">
+              <h3>
+                <a href="/port/<%=port._id%>" class="portAnchor"
+                  >College Projects in C and Web Development
+                </a>
+              </h3>
+            </li>
+            <li class="timelineList">
+              <h3>
+                <a href="/port/<%=port._id%>" class="portAnchor"
+                  >Setup Linux for Server and Personal Use
+                </a>
+              </h3>
+            </li>
+          </ul>
+
+          <h2>2020</h2>
+
+          <ul>
+            <li class="timelineList">
+              <h3>
+                <a href="/port/<%=port._id%>" class="portAnchor"
+                  >Recovery from Ransomware Attack in Windows
+                </a>
+              </h3>
+            </li>
+            <li class="timelineList">
+              <h3>
+                <a href="/port/<%=port._id%>" class="portAnchor"
+                  >Troubleshooting of IT Devices and Personal Computers
+                </a>
+              </h3>
+            </li>
+          </ul>
+        </div>
+        <div class="contact">
+          <p class="styleAnchor">
+            <br /><br />
+
+            <br />
+            <a class="styleAnchor" href="#middle">Back to Top</a>
+          </p>
+        </div>
+        <div class="pubinput">
+          <br />
+          <!-- <br />
+          <p>
+            Feature your Articles, Findings and Research works here or<br />simply
+            contact me if you've something to share.
+          </p> -->
+          <br />
+          <br />
+          <br />
+          <br />
+        </div>
+      </div>
+    </section>
+    <section class="section sec5 contact" id="contact">
+      <div class="pubinput">
+        <br />
+        <h2 id="contact">Get In Touch</h2>
+        <!-- <br />
+          <p>
+            Feature your Articles, Findings and Research works here or<br />simply
+            contact me if you've something to share.
+          </p> -->
+        <br />
+        <form action="/publish" method="post">
+          <input
+            class="logoe"
+            type="text"
+            name="name"
+            placeholder="*Full Name"
+            required
+          />
+          <input
+            class="logoe"
+            type="text"
+            name="email"
+            placeholder="*Email Address"
+            required
+          />
+          <br />
+          <textarea
+            class="logoee"
+            id="publishTitle"
+            name="postTitle"
+            rows="5"
+            cols="72"
+            required
+          >
+ Title: </textarea
+          >
+          <br />
+          <textarea
+            class="logoee"
+            id="publishBody"
+            name="postBody"
+            rows="8"
+            cols="72"
+            aria-placeholder="Body"
+            required
+          >
+ Body:</textarea
+          >
+          <br />
+          <button class="button" type="submit" name="button">SEND</button>
+        </form>
+        <br />
+        <br />
+        <br />
+      </div>
+    </section>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+      integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="./js/index.js"></script>
+    <script src="./js/utils.js"></script>
   </body>
 </html>
