@@ -84,7 +84,7 @@ section {
 
 .controlls {
   position: fixed;
-  z-index: 100;
+  z-index: 23;
   /* top 50 to bring in center */
   top: 7%;
   right: 3%;
