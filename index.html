@@ -572,82 +572,82 @@
             </li>
           </ul>
         </div>
+        <div class="timelineBody">
+          <br />
+          <br />
+          <br />
+          <article class="timeline">
+            <nav class="timeline__nav">
+              <ul>
+                <li><span>1993</span></li>
+                <li><span>1994</span></li>
+                <li><span>1995</span></li>
+                <li><span>1996</span></li>
+              </ul>
+            </nav>
+            <div class="timeline__section">
+              <div class="wrapperTimeline">
+                <h2 class="milestone">1993</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel
+                  corporis ipsa quam voluptas! Reiciendis doloremque amet
+                  dolorum tempore, soluta, facilis corporis?
+                </p>
+
+                <h2 class="milestone">1994</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Harum quo aut porro inventore ipsa explicabo consequuntur,
+                  natus, animi, dolor officia fugiat! Sequi maiores eligendi
+                  cumque maxime harum sed dolorem facere, eaque natus quo saepe,
+                  nesciunt dolor? Consectetur rem ab incidunt.
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Deleniti, cum molestias cumque nulla odio vero ratione
+                  mollitia dolorum ducimus dicta veritatis, eligendi nesciunt,
+                  sint provident animi laboriosam optio minima odit assumenda ea
+                  dolor, aspernatur tempora debitis. Placeat ratione dolorem
+                  saepe ab, delectus! Consequatur illum, at commodi laboriosam
+                  pariatur accusamus omnis.
+                </p>
+
+                <h2 class="milestone">1995</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Dolore neque beatae praesentium facere laboriosam aperiam,
+                  iusto veritatis reprehenderit sit voluptatem atque incidunt
+                  esse odio dolor qui pariatur eveniet iste sint, ad aliquid
+                  ratione tempore. Repellat sint unde quo assumenda perferendis
+                  nesciunt dolorem, molestiae blanditiis doloremque quod aut
+                  voluptatibus dolorum odit, iste error vero, quidem consectetur
+                  id. Dolores beatae inventore autem.
+                </p>
+
+                <h2 class="milestone">1996</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae
+                  a aperiam similique tempora nemo incidunt aliquam molestiae,
+                  ipsum quos, omnis earum vitae cum excepturi sapiente nisi quas
+                  temporibus, maiores debitis.
+                </p>
+              </div>
+            </div>
+          </article>
+        </div>
         <div class="contact">
           <p class="styleAnchor">
-            <br /><br />
-
+            <br />
+            <br />
             <br />
             <a class="styleAnchor" href="#middle">Back to Top</a>
           </p>
-        </div>
-        <div class="pubinput">
           <br />
-          <!-- <br />
-          <p>
-            Feature your Articles, Findings and Research works here or<br />simply
-            contact me if you've something to share.
-          </p> -->
           <br />
           <br />
           <br />
           <br />
         </div>
-      </div>
-    </section>
-    <section class="section sec5 contact" id="contact">
-      <div class="pubinput">
-        <br />
-        <h2 id="contact">Get In Touch</h2>
-        <!-- <br />
-          <p>
-            Feature your Articles, Findings and Research works here or<br />simply
-            contact me if you've something to share.
-          </p> -->
-        <br />
-        <form action="/publish" method="post">
-          <input
-            class="logoe"
-            type="text"
-            name="name"
-            placeholder="*Full Name"
-            required
-          />
-          <input
-            class="logoe"
-            type="text"
-            name="email"
-            placeholder="*Email Address"
-            required
-          />
-          <br />
-          <textarea
-            class="logoee"
-            id="publishTitle"
-            name="postTitle"
-            rows="5"
-            cols="72"
-            required
-          >
- Title: </textarea
-          >
-          <br />
-          <textarea
-            class="logoee"
-            id="publishBody"
-            name="postBody"
-            rows="8"
-            cols="72"
-            aria-placeholder="Body"
-            required
-          >
- Body:</textarea
-          >
-          <br />
-          <button class="button" type="submit" name="button">SEND</button>
-        </form>
-        <br />
-        <br />
-        <br />
       </div>
     </section>
 
@@ -657,8 +657,85 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="./js/index.js"></script>
     <script src="./js/utils.js"></script>
+    <script>
+      "use strict";
+      $(function () {
+        var stickyTop = 0,
+          scrollTarget = false;
+        var timeline = $(".timeline__nav"),
+          items = $("li", timeline),
+          milestones = $(".timeline__section .milestone"),
+          offsetTop = parseInt(timeline.css("top"));
+        var TIMELINE_VALUES = {
+          start: 190,
+          step: 30,
+        };
+        $(window)
+          .resize(function () {
+            timeline.removeClass("fixed");
+            stickyTop = timeline.offset().top - offsetTop;
+            $(window).trigger("scroll");
+          })
+          .trigger("resize");
+        $(window)
+          .scroll(function () {
+            if ($(window).scrollTop() > stickyTop) {
+              timeline.addClass("fixed");
+            } else {
+              timeline.removeClass("fixed");
+            }
+          })
+          .trigger("scroll");
+        items.find("span").click(function () {
+          var li = $(this).parent(),
+            index = li.index(),
+            milestone = milestones.eq(index);
+
+          if (!li.hasClass("active") && milestone.length) {
+            scrollTarget = index;
+            var scrollTargetTop = milestone.offset().top - 80;
+            $("html, body").animate(
+              {
+                scrollTop: scrollTargetTop,
+              },
+              {
+                duration: 400,
+                complete: function complete() {
+                  scrollTarget = false;
+                },
+              }
+            );
+          }
+        });
+        $(window)
+          .scroll(function () {
+            var viewLine = $(window).scrollTop() + $(window).height() / 3,
+              active = -1;
+
+            if (scrollTarget === false) {
+              milestones.each(function () {
+                if ($(this).offset().top - viewLine > 0) {
+                  return false;
+                }
+
+                active++;
+              });
+            } else {
+              active = scrollTarget;
+            }
+
+            timeline.css(
+              "top",
+              -1 * active * TIMELINE_VALUES.step + TIMELINE_VALUES.start + "px"
+            );
+            items.filter(".active").removeClass("active");
+            items.eq(active != -1 ? active : 0).addClass("active");
+          })
+          .trigger("scroll");
+      });
+    </script>
   </body>
 </html>
