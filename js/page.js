@@ -59,6 +59,7 @@ function PageTransitions() {
 PageTransitions();
 
 // if any of the sections has class active then not fire event
+// parallax mouse movement code
 let xValue = 0;
 let yValue = 0;
 let oneDoes = false;
@@ -101,5 +102,3 @@ if (!oneDoes) {
     });
   });
 }
-
-// timeline

@@ -254,41 +254,104 @@ a {
 }
 
 /* timeline */
-/* .wrapperTimeline {
-  margin: 0 auto;
-  padding: 0 16.66% 50px;
-  width: 100%;
-}
+
 .timeline {
   position: relative;
-  margin: 0 auto;
+  margin-top: 10px;
 }
-.timeline__nav {
+.timeline__section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.wrapperTimeline {
+  margin: 0 auto;
+  height: 400px;
+  width: auto;
+  overflow-y: scroll;
+  padding: 0 16.66% 50px;
+}
+.wrapperTimeline::-webkit-scrollbar {
+  width: 0;
+}
+
+.nav_wrapper {
+  height: 300px;
   position: fixed;
-  z-index: 99;
-  top: 0;
-  transition: top 0.3s ease-out;
-} */
-/* .timeline__nav ul {
-  list-style: none;
-  list-style-position: inside;
+  width: 50px;
+  overflow-y: hidden;
+}
+
+.timeline__nav {
+  position: absolute;
+  overflow: hidden;
+  transition: all 0.3s ease-out;
+  animation: fadeInOut 3s infinite alternate;
+}
+
+.timeline__nav::before {
+  animation: fadeInOut 2s infinite alternate;
+}
+
+.timeline__nav::after {
+  animation: fadeInOut 2s infinite alternate;
+}
+
+.timeline__nav ul {
+  /* list-style: none; */
+  /* list-style-position:outside; */
   margin: 15px 0;
+  transition: all 0.3s ease-out;
 }
 .timeline__nav ul li {
-  margin: 15px 0;
-  padding-left: 0;
+  margin-bottom: 30px;
   list-style-type: none;
   color: #bfc1c3;
-  border-bottom: 1px dotted rgba(0, 0, 0, 0.3);
+  transform: rotate(270deg);
   cursor: pointer;
-  transition: all 0.3s ease-out;
+}
+.timeline__nav span {
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
 }
 .timeline__nav ul li.active {
   font-weight: bold;
-  color: #f94125;
-  border-bottom: 1px dotted transparent;
-  transform: scale(1.2);
+  color: #edc7c7;
+  transform: rotate(0deg);
+  animation: fadeInOutFast 1.5s infinite alternate;
+  list-style-type: square;
+  list-style: georgian;
+  background-color: transparent;
 }
 .timeline__nav ul li:hover {
-  color: #000;
-} */
+  color: #baded0;
+  text-shadow: #edc7c7;
+  font-weight: 100;
+  animation: fadeInOutFast 0.6s infinite alternate;
+  /* transform: rotate(0deg); */
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 0.7;
+  }
+  75% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 0.9;
+  }
+}
+@keyframes fadeInOutFast {
+  0% {
+    opacity: 0.4;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
