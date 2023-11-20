@@ -279,7 +279,7 @@ a {
   height: 300px;
   position: fixed;
   width: 50px;
-  overflow-y: hidden;
+  overflow: hidden;
 }
 
 .timeline__nav {
@@ -319,9 +319,8 @@ a {
   color: #edc7c7;
   transform: rotate(0deg);
   animation: fadeInOutFast 1.5s infinite alternate;
-  list-style-type: square;
-  list-style: georgian;
   background-color: transparent;
+  padding-left: 15px;
 }
 .timeline__nav ul li:hover {
   color: #baded0;
