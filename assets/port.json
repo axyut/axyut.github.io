@@ -2,7 +2,7 @@
   "basics": {
     "name": "Achyut Koirala",
     "label": "Backend Developer.",
-    "picture": "",
+    "picture": "https://achyutkoirala.com.np/assets/fav/profile.jpeg",
     "email": "mail@achyutkoirala.com.np",
     "phone": "",
     "website": "https://achyutkoirala.com.np",
@@ -14,7 +14,7 @@
       "countryCode": "NP",
       "region": "Bagmati Province"
     },
-    "profiles": [
+    "socials": [
       {
         "network": "Twitter",
         "username": "achyut_koirala_",
@@ -35,11 +35,11 @@
   "work": [
     {
       "company": "Hyperce",
-      "position": "Backend Developer",
-      "location": "Wilmington, DE United States",
+      "position": "Backend Developer, Intern",
+      "location": "Wilmington, DE United States and Kathmandu, Nepal",
       "website": "https://www.hyperce.io/",
       "startDate": "Aug 2023",
-      "endDate": "Currently working",
+      "endDate": "Oct 2023",
       "summary": "Hyperce is an E-commerce suite partner for elevating businesses. I worked as Backend Developer with technologies like Vendure, GraphQL, Typescript, Angular and TypeORM and learned internal mechanism of e-commerce platform as well as working of a tech-startup",
       "highlights": [
         "Learnt more about strictly typed languages",
@@ -107,6 +107,10 @@
   ],
 
   "awards and certifications": [
+    {
+      "Award Name": "Intern of the Month",
+      "Issuing Organization": "Hyperce"
+    },
     {
       "Certification Name": "Microsoft Certified: Azure Fundamentals",
       "Issuing Organization": "Microsoft",
