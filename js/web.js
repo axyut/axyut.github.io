@@ -4,7 +4,7 @@ canvas.width = banner.offsetWidth;
 canvas.height = banner.offsetHeight;
 const ctx = canvas.getContext("2d");
 const dots = [];
-const arrayColors = ["#eee", "#545454", "#5F6A6A", "#A6ACAF", "#2C3E50"];
+const arrayColors = ["#545454", "#5F6A6A", "#A6ACAF", "#2C3E50"];
 let mouse = { x: null, y: null }; // Mouse coordinates
 
 // Function to create dots
@@ -111,19 +111,8 @@ const handleHoverEffects = () => {
             (mouse.x - dot.x) ** 2 + (mouse.y - dot.y) ** 2
         );
 
-        // If the dot is white and within 50px of the mouse, enlarge it and make it transparent
         if (dot.color === dot.originalColor && distance < 50) {
-            dot.size = 10;
-            // dot.color = "rgba(255, 255, 255, 0.5)";
-            dot.isHovered = true;
-            hoveredDot = dot;
-        } else if (
-            // dot.color === dot.originalColor &&
-            dot.color === "#eee" &&
-            distance < 50
-        ) {
-            dot.size = 30;
-            dot.color = "rgba(255, 255, 255, 0.5)";
+            dot.size = 7;
             dot.isHovered = true;
             hoveredDot = dot;
         } else if (dot.isHovered && distance >= 50) {
