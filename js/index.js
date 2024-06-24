@@ -23,7 +23,7 @@ timeline
             y:
                 window.innerHeight -
                 document.querySelector(".text h1").getBoundingClientRect().top +
-                200,
+                400,
             duration: 1.4,
         },
         "1.8"
