@@ -39,6 +39,7 @@ main {
     position: absolute;
     top: 51%;
     left: 50%;
+    opacity: 0.1;
     width: 222%;
     /* transform: translate(-50%, -50%); */
     z-index: 2;
@@ -63,6 +64,7 @@ main {
     /* left: calc(50% + 117px); */
     left: 62%;
     width: 150%;
+    opacity: 0.2;
     /* height: 1833px; */
     /* transform: translate(-50%, -50%); */
     z-index: 4;
@@ -100,7 +102,8 @@ main {
     /* left: calc(50% + 129px); */
     left: 64%;
     /* width: 449px; */
-    width: 23%;
+    width: 100%;
+    opacity: 0.1;
     /* height: 449px; */
     /* transform: translate(-50%, -50%); */
     z-index: 7;
@@ -166,7 +169,7 @@ main {
     left: 42%;
     /* width: 653px; */
     width: 33%;
-
+    opacity: 0.1;
     /* transform: translate(-50%, -50%); */
     z-index: 11;
 }
@@ -187,11 +190,12 @@ main {
 .fog_5 {
     position: absolute;
     /* top: calc(50% + 149px); */
-    top: 56%;
+    top: 0;
     /* left: calc(50% - 28px); */
     left: 52%;
     /* width: 1435px; */
-    width: 73%;
+    width: 80%;
+    opacity: 0.05;
     /* transform: translate(-50%, -50%); */
     z-index: 13;
 }
@@ -222,6 +226,7 @@ main {
     z-index: 15;
 }
 
+/* kaam xaina */
 .fog_6 {
     position: absolute;
     /* top: calc(50% + 277px); */
@@ -267,7 +272,8 @@ main {
     top: 0%;
     right: 0%;
     /* width: 595px; */
-    width: 30%;
+    width: 60%;
+    opacity: 0.1;
     pointer-events: none;
 }
 
@@ -286,6 +292,7 @@ main {
     top: calc(100% - 355px);
     left: 50%;
     /* width: 1600px; */
+    opacity: 0.1;
     width: 82%;
     /* transform: translate(-50%, -50%); */
 }
@@ -480,7 +487,9 @@ main {
     /* responsive main on mobile */
 }
 
-#dotsCanvas {
+#dotsCanvas,
+#starsCanvas,
+#auroraCanvas {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -505,3 +514,7 @@ main {
 const arrayColors = ["#eee", "#545454", "#5F6A6A", "#A6ACAF", "#2C3E50"]; 
 
 */
+
+.banner {
+    overflow: hidden;
+}

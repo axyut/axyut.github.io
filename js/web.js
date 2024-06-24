@@ -9,10 +9,9 @@ let mouse = { x: null, y: null }; // Mouse coordinates
 
 // Function to create dots
 const createDots = () => {
-    for (let index = 0; index < 70; index++) {
+    for (let index = 0; index < 90; index++) {
         let color = arrayColors[Math.floor(Math.random() * 5)];
-        let size =
-            color === "#eee" ? Math.random() * 3 + 3 : Math.random() * 2 + 2; // White dots are larger
+        let size = Math.random() * 1 + 1;
         dots.push({
             x: Math.floor(Math.random() * canvas.width),
             y: Math.floor(Math.random() * canvas.height),
@@ -73,7 +72,7 @@ const drawDotLines = () => {
         closeDots.slice(0, 2).forEach((closeDot) => {
             // Limit to closest 2 dots
             ctx.strokeStyle = dots[i].color;
-            ctx.lineWidth = 0.5; // Set line width to 0.5
+            ctx.lineWidth = 0.3; // Set line width to 0.5
             ctx.beginPath();
             ctx.moveTo(dots[i].x, dots[i].y);
             ctx.lineTo(closeDot.dot.x, closeDot.dot.y);
@@ -93,7 +92,7 @@ const drawMouseLines = () => {
         if (distance < 200) {
             // Keep mouse connection distance to 200
             ctx.strokeStyle = dot.color;
-            ctx.lineWidth = 1;
+            ctx.lineWidth = 0.8;
             ctx.beginPath();
             ctx.moveTo(dot.x, dot.y);
             ctx.lineTo(mouse.x, mouse.y);
@@ -112,7 +111,7 @@ const handleHoverEffects = () => {
         );
 
         if (dot.color === dot.originalColor && distance < 50) {
-            dot.size = 7;
+            dot.size = 5;
             dot.isHovered = true;
             hoveredDot = dot;
         } else if (dot.isHovered && distance >= 50) {
