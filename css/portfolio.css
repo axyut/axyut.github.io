@@ -57,6 +57,7 @@ p {
   font-weight: bold;
   font-size: 10px;
   text-decoration: none;
+  transition: 200ms;
 }
 
 .sec3 h1 {
@@ -93,11 +94,11 @@ p {
   border-radius: 8px;
   text-align: left;
 }
-ul {
+.wrapper ul {
   margin-left: 30px;
 }
 
-ol {
+.wrapper ol {
   margin-left: 30px;
 }
 
@@ -141,9 +142,37 @@ ol {
   color: #cfc0b0;
   font-size: 15px !important;
 }
+
+/* experience will have text color gradient with animation from left to right */
+.exp {
+  background: linear-gradient(to right, #f4b26c, #d4ba9d, #aaaaeb, #7b7be8);
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  color: transparent !important;
+  animation: hue 3s infinite linear;
+
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  font-family: "Poppins";
+  font-weight: lighter;
+  font-weight: 600;
+  transition: 200ms;
+}
+.exp:hover {
+  font-size: 15px !important;
+}
+
+@keyframes hue {
+  from {
+    filter: hue-rotate(0deg);
+  }
+  to {
+    filter: hue-rotate(360deg);
+  }
+}
 .simpleAnchor {
   margin: 0;
-
   padding: 0px;
   text-align: center;
   border-radius: 3px;
@@ -252,4 +281,135 @@ a {
   #loginpub {
     margin: auto;
   }
+
+  .skill_icons {
+    flex-direction: column !important;
+    align-items: stretch;
+  }
+}
+
+/* timeline */
+
+.timeline {
+  position: relative;
+  margin-top: 10px;
+}
+.timeline__section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.wrapperTimeline {
+  margin: 0 auto;
+  height: 400px;
+  width: auto;
+  overflow-y: scroll;
+  padding: 0 16.66% 50px;
+}
+.wrapperTimeline::-webkit-scrollbar {
+  width: 0;
+}
+
+.nav_wrapper {
+  height: 300px;
+  position: fixed;
+  width: 50px;
+  overflow: hidden;
+}
+
+.timeline__nav {
+  position: absolute;
+  overflow: hidden;
+  transition: all 0.3s ease-out;
+  animation: fadeInOut 3s infinite alternate;
+}
+
+.timeline__nav::before {
+  animation: fadeInOut 2s infinite alternate;
+}
+
+.timeline__nav::after {
+  animation: fadeInOut 2s infinite alternate;
+}
+
+.timeline__nav ul {
+  list-style: none;
+  margin: 15px 0;
+  transition: all 0.3s ease-out;
+}
+.timeline__nav ul li {
+  margin-bottom: 30px;
+  list-style-type: none;
+  color: #bfc1c3;
+  transform: rotate(270deg);
+  cursor: pointer;
+}
+.timeline__nav span {
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.timeline__nav ul li.active {
+  font-weight: bold;
+  color: #edc7c7;
+  transform: rotate(0deg);
+  animation: fadeInOutFast 2.5s infinite alternate;
+  background-color: transparent;
+  padding-left: 15px;
+}
+.timeline__nav ul li:hover {
+  color: #baded0;
+  text-shadow: #edc7c7;
+  font-weight: 100;
+  animation: fadeInOutFast 0.6s infinite alternate;
+  /* transform: rotate(0deg); */
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 0.7;
+  }
+  75% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 0.9;
+  }
+}
+@keyframes fadeInOutFast {
+  0% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.skill_icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.tech_stack {
+  list-style: none;
+}
+
+.tech_stack li {
+  margin-bottom: 20px;
+}
+.tech_stack_heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.tech_stack_heading h1 {
+  margin-bottom: 20px;
+  margin-left: 35px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
