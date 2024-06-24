@@ -19,6 +19,9 @@ main {
     overflow: hidden;
     width: 100%;
 }
+/* main::-webkit-scrollbar {
+    width: 10px;
+} */
 
 .parallax {
     pointer-events: none;
@@ -139,12 +142,12 @@ main {
 
 .text h2 {
     font-weight: 100;
-    font-size: 6.5rem;
+    font-size: 3.5rem;
 }
 
 .text h1 {
     font-weight: 800;
-    font-size: 9rem;
+    font-size: 5rem;
     line-height: 0.88;
 }
 
@@ -280,9 +283,12 @@ main {
 .black_shadow {
     position: absolute;
     z-index: 20;
-    bottom: 0%;
-    right: 0%;
+    /* bottom: 0%; */
+    top: 0%;
+    left: 0%;
+    /* right: 0%; */
     width: 100%;
+    height: 100%;
     pointer-events: none;
 }
 
@@ -516,5 +522,8 @@ const arrayColors = ["#eee", "#545454", "#5F6A6A", "#A6ACAF", "#2C3E50"];
 */
 
 .banner {
-    overflow: hidden;
+    height: 120vh;
+    width: 180vw;
+    margin-left: -40vw;
+    margin-top: -10vh;
 }

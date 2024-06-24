@@ -5,11 +5,26 @@ canvas.height = banner.offsetHeight;
 const ctx = canvas.getContext("2d");
 const dots = [];
 const arrayColors = ["#545454", "#5F6A6A", "#A6ACAF", "#2C3E50"];
-let mouse = { x: null, y: null }; // Mouse coordinates
+let mouse = { x: 0, y: 0 }; // Mouse coordinates
 
+const numDots = 300;
+const autoLineWdith = 0.2;
+const mouseLineWidth = 0.6;
+
+canvas.width = banner.offsetWidth;
+canvas.height = banner.offsetHeight;
+
+// Adjust the banner's bounding box offsets
+const getBannerOffset = () => {
+    const rect = banner.getBoundingClientRect();
+    return {
+        left: rect.left + window.scrollX,
+        top: rect.top + window.scrollY,
+    };
+};
 // Function to create dots
 const createDots = () => {
-    for (let index = 0; index < 90; index++) {
+    for (let index = 0; index < numDots; index++) {
         let color = arrayColors[Math.floor(Math.random() * 5)];
         let size = Math.random() * 1 + 1;
         dots.push({
@@ -72,7 +87,7 @@ const drawDotLines = () => {
         closeDots.slice(0, 2).forEach((closeDot) => {
             // Limit to closest 2 dots
             ctx.strokeStyle = dots[i].color;
-            ctx.lineWidth = 0.3; // Set line width to 0.5
+            ctx.lineWidth = autoLineWdith; // Set line width to 0.5
             ctx.beginPath();
             ctx.moveTo(dots[i].x, dots[i].y);
             ctx.lineTo(closeDot.dot.x, closeDot.dot.y);
@@ -92,7 +107,7 @@ const drawMouseLines = () => {
         if (distance < 200) {
             // Keep mouse connection distance to 200
             ctx.strokeStyle = dot.color;
-            ctx.lineWidth = 0.8;
+            ctx.lineWidth = mouseLineWidth;
             ctx.beginPath();
             ctx.moveTo(dot.x, dot.y);
             ctx.lineTo(mouse.x, mouse.y);
@@ -149,9 +164,10 @@ const animateDots = () => {
 };
 
 // Event listeners for mouse interaction
-banner.addEventListener("mousemove", (event) => {
-    mouse.x = event.pageX - banner.getBoundingClientRect().left;
-    mouse.y = event.pageY - banner.getBoundingClientRect().top;
+banner.addEventListener("mousemove", (e) => {
+    const bannerOffset = getBannerOffset();
+    mouse.x = e.pageX - bannerOffset.left;
+    mouse.y = e.pageY - bannerOffset.top;
 });
 
 banner.addEventListener("mouseout", () => {

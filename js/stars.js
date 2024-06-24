@@ -4,7 +4,7 @@ const ctxStar = canvasStar.getContext("2d");
 canvasStar.width = bannerStar.offsetWidth;
 canvasStar.height = bannerStar.offsetHeight;
 
-const numStars = 110;
+const numStars = 1700;
 const stars = [];
 let shootingStar = null;
 let shootingStarTimeout = null; // Global variable for shooting star timeout
@@ -13,9 +13,9 @@ const createStars = () => {
     for (let i = 0; i < numStars; i++) {
         const x = Math.random() * canvasStar.width;
         const y = Math.random() * canvasStar.height;
-        const size = Math.random() * 1.5;
+        const size = Math.random() * 1.1;
         const opacity = Math.random();
-        const twinkleSpeed = Math.random() * 5 + 1;
+        const twinkleSpeed = Math.random() * 4 + 1;
         const scale = 1;
         const angle = 120;
         stars.push({ x, y, size, opacity, twinkleSpeed, scale, angle });
@@ -54,8 +54,8 @@ const twinkleStars = () => {
         if (star.opacity < 0) star.opacity = 0;
 
         star.scale += (Math.random() * 0.02 - 0.01) * star.twinkleSpeed;
-        if (star.scale > 1.2) star.scale = 1.2;
-        if (star.scale < 0.8) star.scale = 0.8;
+        if (star.scale > 1.3) star.scale = 1.3;
+        if (star.scale < 0.7) star.scale = 0.7;
 
         // Influence surrounding stars
         const influenceRadius = 50;
@@ -74,8 +74,8 @@ const twinkleStars = () => {
 
                     otherStar.scale +=
                         (star.scale - prevScale) * 0.1 * influenceFactor;
-                    if (otherStar.scale > 1.2) otherStar.scale = 1.2;
-                    if (otherStar.scale < 0.8) otherStar.scale = 0.8;
+                    if (otherStar.scale > 1.3) otherStar.scale = 1.3;
+                    if (otherStar.scale < 0.7) otherStar.scale = 0.7;
                 }
             }
         });
@@ -99,10 +99,7 @@ const selectShootingStar = () => {
         scale: 1.5,
         size: 1.5,
     };
-    shootingStarTimeout = setTimeout(
-        selectShootingStar,
-        Math.random() * 5000 + 4000
-    ); // Randomly select next shooting star
+    shootingStarTimeout = setTimeout(selectShootingStar, Math.random() * 5000); // Randomly select next shooting star
 };
 
 const drawShootingStar = () => {
@@ -117,8 +114,8 @@ const drawShootingStar = () => {
     ); // Move in direction of angle
 
     // Calculate scale based on progress
-    const maxScale = 3; // Maximum scale factor
-    const minScale = 1.5; // Minimum scale factor
+    const maxScale = 2; // Maximum scale factor
+    const minScale = 0.7; // Minimum scale factor
     const distanceScaleFactor = 0.01; // Adjust this factor as needed
     const currentScale =
         minScale +
@@ -149,15 +146,38 @@ const drawShootingStar = () => {
 
     shootingStar.progress += 9; // Adjust speed here
 };
+// Animate stars opacity individually
+const animateStarOpacity = () => {
+    stars.forEach((star, i) => {
+        gsap.to(star, {
+            opacity: Math.random(), // Random final opacity
+            duration: 2,
+            delay: Math.random() * 2, // Random delay for each star
+            ease: "power3.out",
+            // onUpdate: () => {
+            //     // Force redraw on each update
+            //     drawStars();
+            // },
+        });
+    });
+};
 
 createStars();
 animateStars();
+animateStarOpacity();
 selectShootingStar();
 
 window.addEventListener("resize", () => {
-    canvasStar.width = bannerStar.offsetWidth;
-    canvasStar.height = bannerStar.offsetHeight;
+    canvasStar.width = main.offsetWidth;
+    canvasStar.height = main.offsetHeight;
     stars.length = 0; // Clear the stars array
     createStars(); // Recreate stars
     drawStars(); // Redraw stars
+    animateStarOpacity(); // Reapply animation
 });
+
+// timeline.from("#starsCanvas", {
+//     duration: 2,
+//     opacity: 0,
+//     ease: "power3.out",
+// });
