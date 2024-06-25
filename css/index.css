@@ -26,14 +26,14 @@ main {
     transform: translate(-50%, -50%);
     transition: 0.45s cubic-bezier(cubic-bezier(0.215, 0.41, 0.325, 0.99));
 }
-.fog_big_bg {
+/* .fog_big_bg {
     position: absolute;
     top: 0;
     left: 52%;
     width: 100%;
-    opacity: 0.08;
+    opacity: 0;
     z-index: 1;
-}
+} */
 .rock-hills {
     position: absolute;
     top: 50%;
@@ -148,70 +148,6 @@ main {
     .text h2 {
         font-size: 5rem;
     }
-    .bg-img {
-        width: initial;
-        height: 355%;
-    }
-
-    .mountain_1 {
-        width: initial;
-        height: 100%;
-        top: 80%;
-    }
-
-    .mountain_2 {
-        width: initial;
-        height: 100%;
-        top: 100%;
-    }
-
-    .mountain_3 {
-        width: initial;
-        height: 100%;
-        top: 80%;
-    }
-
-    .mountain_4 {
-        width: initial;
-        height: 100%;
-        top: 104%;
-    }
-
-    .mountain_5 {
-        width: initial;
-        height: 100%;
-        top: 95%;
-    }
-
-    .mountain_6 {
-        width: initial;
-        height: 100%;
-        top: 70%;
-    }
-
-    .mountain_7 {
-        width: initial;
-        height: 100%;
-        top: 60%;
-    }
-
-    .mountain_8 {
-        width: initial;
-        height: 100%;
-        top: 62%;
-    }
-
-    .mountain_9 {
-        width: initial;
-        height: 100%;
-        top: 64%;
-    }
-
-    .mountain_10 {
-        width: initial;
-        height: 100%;
-        top: 56%;
-    }
 }
 
 @media (max-width: 768px) {
@@ -224,33 +160,6 @@ main {
         font-size: 4.2rem;
         line-height: 1.1;
     }
-
-    header nav {
-        padding: 0 1rem;
-    }
-
-    .logo {
-        width: 80px;
-    }
-
-    header ul a {
-        padding: 0 0.9rem;
-        font-size: 0.73rem;
-    }
-
-    .search a {
-        font-size: 0.85rem;
-        padding: 0 1.8rem;
-    }
-
-    .hamburger {
-        padding-left: 0.9rem;
-    }
-
-    .hamburger a {
-        width: 30px;
-        height: 30px;
-    }
 }
 
 @media (max-width: 520px) {
@@ -260,46 +169,6 @@ main {
 
     .text h2 {
         font-size: 3.5rem;
-    }
-
-    .mountain_1 {
-        top: 80%;
-    }
-
-    .mountain_2 {
-        top: 90%;
-    }
-
-    .mountain_3 {
-        top: 80%;
-    }
-
-    .mountain_4 {
-        top: 94%;
-    }
-
-    .mountain_5 {
-        top: 85%;
-    }
-
-    .mountain_6 {
-        top: 60%;
-    }
-
-    .mountain_7 {
-        top: 50%;
-    }
-
-    .mountain_8 {
-        top: 50%;
-    }
-
-    .mountain_9 {
-        top: 50%;
-    }
-
-    .mountain_10 {
-        top: 50%;
     }
 }
 
