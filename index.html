@@ -42,18 +42,24 @@
             <div class="control control-3" data-id="portfolio">Portfolio</div>
         </div>
         <main class="banner">
-            <div>
-                <div class="vignette hide"></div>
-                <!-- <img
-                    src="./assets/front-page/background.jpg"
-                    data-speedx="0.017"
-                    data-speedy="0.18"
-                    alt="bg"
-                    data-speedz="0.05"
-                    data-distance="-200"
-                    class="parallax bg_img"
-                /> -->
-                <!-- <img
+            <!-- <div
+                data-speedx="0.4"
+                data-speedz="0"
+                data-speedy="0"
+                data-distance="2250"
+                class="text parallax"
+            >
+                <h2>Achyut</h2>
+                <h1>Koirala</h1>
+            </div> -->
+
+            <canvas id="starsCanvas"></canvas>
+            <canvas id="dotsCanvas"></canvas>
+            <canvas id="auroraCanvas"></canvas>
+        </main>
+        <div class="static">
+            <div class="vignette hide"></div>
+            <!-- <img
                     src="./assets/front-page/fog_7.png"
                     data-speedx="0.07"
                     data-speedy="0.22"
@@ -62,16 +68,8 @@
                     data-distance="850"
                     class="parallax fog_7"
                 /> -->
-                <!-- <img
-                    src="./assets/front-page/mountain_10.png"
-                    alt=""
-                    data-speedx="0.055"
-                    data-speedz="0.05"
-                    data-speedy="0.205"
-                    data-distance="1050"
-                    class="parallax mountain_10"
-                /> -->
-                <!-- <img
+
+            <!-- <img
                     src="./assets/front-page/fog_6.png"
                     alt=""
                     data-speedx="0.095"
@@ -80,52 +78,50 @@
                     data-distance="1250"
                     class="parallax fog_6"
                 /> -->
-                <!-- <img
-                    src="./assets/front-page/mountain_9.png"
-                    data-speedx="0.05"
-                    data-speedz="0.05"
-                    data-speedy="0.115"
-                    data-distance="1450"
-                    class="parallax mountain_9"
-                />
-                <img
-                    src="./assets/front-page/mountain_8.png"
-                    data-speedx="0.078"
-                    data-speedy="0.11"
-                    data-speedz="0.05"
-                    data-distance="1650"
-                    class="parallax mountain_8"
-                /> -->
-                <!-- good -->
-                <img
-                    src="./assets/front-page/fog_5.png"
-                    data-speedx="0.09"
-                    data-speedy="0.105"
-                    data-speedz="0.005"
-                    data-distance="1850"
-                    class="parallax fog_5"
-                />
-                <!-- <img
-                    src="./assets/front-page/mountain_7.png"
-                    data-speedx="0.06"
-                    data-speedy="0.1"
-                    data-speedz="0.05"
-                    data-distance="2050"
-                    class="parallax mountain_7"
-                /> -->
+            <img
+                src="./assets/front-page/rock-hills.png"
+                data-speedx="0.0"
+                data-speedz="0.0"
+                data-speedy="0"
+                data-distance="1450"
+                class="parallax rock-hills"
+            />
+            <!-- <img
+                src="./assets/front-page/lake-bg.png"
+                alt=""
+                data-speedx="0.055"
+                data-speedz="0.05"
+                data-speedy="0.205"
+                data-distance="1050"
+                class="parallax lake"
+            /> -->
+            <img
+                src="./assets/front-page/rock-standalone.png"
+                data-speedx="0.0"
+                data-speedy="0"
+                data-speedz="0.0"
+                data-distance="1650"
+                class="parallax rock-standalone"
+            />
+            <!-- good -->
+            <img
+                src="./assets/front-page/fog_5.png"
+                data-speedx="0.09"
+                data-speedy="0.105"
+                data-speedz="0.005"
+                data-distance="1850"
+                class="parallax fog_5"
+            />
+            <img
+                src="./assets/front-page/gnu-mascot.png"
+                data-speedx="0.0"
+                data-speedy="0"
+                data-speedz="0.0"
+                data-distance="2050"
+                class="parallax gnu-mascot"
+            />
 
-                <div
-                    data-speedx="0.4"
-                    data-speedz="0"
-                    data-speedy="0"
-                    data-distance="2250"
-                    class="text parallax"
-                >
-                    <h2>Achyut</h2>
-                    <h1>Koirala</h1>
-                </div>
-
-                <!-- <img
+            <!-- <img
                     src="./assets/front-page/mountain_6.png"
                     data-speedx="0.065"
                     data-speedy="0.01"
@@ -133,7 +129,7 @@
                     data-distance="2450"
                     class="parallax mountain_6"
                 /> -->
-                <!-- <img
+            <!-- <img
                     src="./assets/front-page/fog_4.png"
                     data-speedx="0.065"
                     data-speedy="0.07"
@@ -141,7 +137,7 @@
                     data-distance="2650"
                     class="parallax fog_4"
                 /> -->
-                <!-- <img
+            <!-- <img
                     src="./assets/front-page/mountain_5.png"
                     data-speedx="0.061"
                     data-speedy="0.05"
@@ -150,17 +146,16 @@
                     class="parallax mountain_5"
                 /> -->
 
-                <!-- okayish -->
-                <!-- <img
-                    src="./assets/front-page/fog_3.png"
-                    data-speedx="0.059"
-                    data-speedy="0.031"
-                    data-speedz="0.005"
-                    data-distance="3050"
-                    class="parallax fog_3"
-                /> -->
+            <!-- <img
+                src="./assets/front-page/fog_3.png"
+                data-speedx="0.059"
+                data-speedy="0.031"
+                data-speedz="0.005"
+                data-distance="3050"
+                class="parallax fog_3"
+            /> -->
 
-                <!-- <img
+            <!-- <img
                     src="./assets/front-page/mountain_4.png"
                     data-speedx="0.04"
                     data-speedy="0.019"
@@ -176,15 +171,15 @@
                     data-distance="3450"
                     class="parallax mountain_3"
                 /> -->
-                <img
-                    src="./assets/front-page/fog_2.png"
-                    data-speedx="0.0235"
-                    data-speedy="0.009"
-                    data-speedz="0.005"
-                    data-distance="3650"
-                    class="parallax fog_2"
-                />
-                <!-- <img
+            <img
+                src="./assets/front-page/fog_2.png"
+                data-speedx="0.0235"
+                data-speedy="0.009"
+                data-speedz="0.005"
+                data-distance="3650"
+                class="parallax fog_2"
+            />
+            <!-- <img
                     src="./assets/front-page/mountain_2.png"
                     data-speedx="0.03"
                     data-speedy="0.03"
@@ -200,34 +195,28 @@
                     data-distance="4050"
                     class="parallax mountain_1"
                 /> -->
-                <img
-                    src="./assets/front-page/sun_rays.png"
-                    class="sun_rays hide"
-                />
-                <img
-                    src="./assets/front-page/black_shadow.png"
-                    class="black_shadow"
-                />
-                <!-- <img
-                    src="./assets/front-page/fog_1.png"
-                    data-speedx="0.062"
-                    data-speedy="0.012"
-                    data-speedz="0.005"
-                    data-distance="4250"
-                    class="parallax fog_1"
-                /> -->
-            </div>
-            <canvas id="starsCanvas"></canvas>
-            <canvas id="dotsCanvas"></canvas>
-            <canvas id="auroraCanvas"></canvas>
-            <!-- <div
-                class="control control-3"
-                data-id="portfolio"
-                id="portfolioLabel"
-            >
-                Portfolio
-            </div> -->
-        </main>
+            <img src="./assets/front-page/sun_rays.png" class="sun_rays hide" />
+            <img
+                src="./assets/front-page/black_shadow.png"
+                class="black_shadow"
+            />
+            <img
+                src="./assets/front-page/fog_1.png"
+                data-speedx="0.062"
+                data-speedy="0.012"
+                data-speedz="0.005"
+                data-distance="4250"
+                class="parallax fog_1"
+            />
+            <img
+                src="./assets/front-page/fog_1.png"
+                data-speedx="0.062"
+                data-speedy="0.012"
+                data-speedz="0.005"
+                data-distance="4250"
+                class="parallax fog_1a"
+            />
+        </div>
         <section class="section sec3" id="portfolio">
             <div id="divleft"></div>
             <div id="divright"></div>

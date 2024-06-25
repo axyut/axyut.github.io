@@ -18,6 +18,7 @@ main {
     height: 100vh;
     overflow: hidden;
     width: 100%;
+    z-index: 1;
 }
 /* main::-webkit-scrollbar {
     width: 10px;
@@ -29,35 +30,71 @@ main {
     transition: 0.45s cubic-bezier(cubic-bezier(0.215, 0.41, 0.325, 0.99));
 }
 
-.bg_img {
+/* .bg_img {
     position: absolute;
     top: 1.94%;
     left: 50%;
     width: 120%;
     height: 180%;
     z-index: 1;
-}
-
-.fog_1 {
+} */
+.rock-hills {
     position: absolute;
-    top: 51%;
+    /* top: calc(50% + 119px); */
+    top: 50%;
+    /* left: calc(50% - 457px); */
     left: 50%;
-    opacity: 0.1;
-    width: 222%;
+    width: 100%;
+    /* height: 463px; */
     /* transform: translate(-50%, -50%); */
     z-index: 2;
 }
-
-.mountain_10 {
+.lake {
     position: absolute;
-    top: 56%;
+    top: 86%;
     /* top: calc(50% + 69px); */
     /* left: calc(50% + 130px); */
-    left: 64%;
-    width: 60%;
+    left: 50%;
+    width: 100%;
     /* height: 870px; */
     /* transform: translate(-50%, -50%); */
     z-index: 3;
+}
+.fog_1 {
+    position: absolute;
+    top: 157%;
+    left: 55%;
+    opacity: 0.5;
+    width: 100%;
+    scale: 1.5;
+    /* transform: translate(-50%, -50%); */
+    z-index: 6;
+}
+.rock-standalone {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    width: 100%;
+    scale: 0.4;
+    z-index: 7;
+}
+.fog_1a {
+    position: absolute;
+    top: 170%;
+    left: 55%;
+    opacity: 0.5;
+    width: 100%;
+    scale: 1.5;
+    /* transform: translate(-50%, -50%); */
+    z-index: 8;
+}
+.gnu-mascot {
+    position: absolute;
+    top: 32%;
+    left: 52%;
+    width: 100%;
+    scale: 0.15;
+    z-index: 9;
 }
 
 .fog_2 {
@@ -65,7 +102,7 @@ main {
     /* top: calc(50% + 95px); */
     top: 58%;
     /* left: calc(50% + 117px); */
-    left: 62%;
+    left: 65%;
     width: 150%;
     opacity: 0.2;
     /* height: 1833px; */
@@ -73,82 +110,14 @@ main {
     z-index: 4;
 }
 
-.mountain_9 {
-    position: absolute;
-    /* top: calc(50% + 119px); */
-    top: 62%;
-    /* left: calc(50% - 457px); */
-    left: 22%;
-    width: 28%;
-    /* height: 463px; */
-    /* transform: translate(-50%, -50%); */
-    z-index: 5;
-}
-
-.mountain_8 {
-    position: absolute;
-    /* top: calc(50% + 6px); */
-    top: 50%;
-    /* left: calc(50% - 282px); */
-    left: 38%;
-    /* width: 786px; */
-    width: 40%;
-    /* height: 786px; */
-    /* transform: translate(-50%, -50%); */
-    z-index: 6;
-}
-
 .fog_3 {
     position: absolute;
-    /* top: calc(50% + 11px); */
-    top: 50%;
-    /* left: calc(50% + 129px); */
-    left: 64%;
-    /* width: 449px; */
+    top: 90%;
+    left: -50%;
     width: 100%;
-    opacity: 0.1;
-    /* height: 449px; */
-    /* transform: translate(-50%, -50%); */
-    z-index: 7;
-}
-
-.mountain_7 {
-    position: absolute;
-    /* top: calc(50% + 34px); */
-    top: 52%;
-    /* left: calc(50% + 245px); */
-    left: 62%;
-    /* width: 515px; */
-    width: 26%;
-    /* height: 515px; */
-    /* transform: translate(-50%, -50%); */
+    scale: 0.3;
+    opacity: 0.6;
     z-index: 8;
-}
-
-.text {
-    position: absolute;
-    /* top: calc(50% - 130px); */
-    top: 32%;
-    left: 50%;
-    /* width: 2100px; */
-    width: 200%;
-    /* transform: translate(-50%, -50%); */
-    z-index: 9;
-    text-align: center;
-    text-transform: uppercase;
-    pointer-events: auto;
-    color: var(--clr-white);
-}
-
-.text h2 {
-    font-weight: 100;
-    font-size: 3.5rem;
-}
-
-.text h1 {
-    font-weight: 800;
-    font-size: 5rem;
-    line-height: 0.88;
 }
 
 .mountain_6 {
@@ -526,4 +495,30 @@ const arrayColors = ["#eee", "#545454", "#5F6A6A", "#A6ACAF", "#2C3E50"];
     width: 180vw;
     margin-left: -40vw;
     margin-top: -10vh;
+}
+
+.text {
+    position: absolute;
+    /* top: calc(50% - 130px); */
+    top: 32%;
+    left: 50%;
+    /* width: 2100px; */
+    width: 200%;
+    /* transform: translate(-50%, -50%); */
+    z-index: 9;
+    text-align: center;
+    text-transform: uppercase;
+    pointer-events: auto;
+    color: var(--clr-white);
+}
+
+.text h2 {
+    font-weight: 100;
+    font-size: 3.5rem;
+}
+
+.text h1 {
+    font-weight: 800;
+    font-size: 5rem;
+    line-height: 0.88;
 }
