@@ -29,45 +29,30 @@ main {
     transform: translate(-50%, -50%);
     transition: 0.45s cubic-bezier(cubic-bezier(0.215, 0.41, 0.325, 0.99));
 }
-
-/* .bg_img {
+.fog_big_bg {
     position: absolute;
-    top: 1.94%;
-    left: 50%;
-    width: 120%;
-    height: 180%;
+    top: 0;
+    left: 52%;
+    width: 100%;
+    opacity: 0.08;
     z-index: 1;
-} */
+}
 .rock-hills {
     position: absolute;
-    /* top: calc(50% + 119px); */
     top: 50%;
-    /* left: calc(50% - 457px); */
     left: 50%;
     width: 100%;
-    /* height: 463px; */
-    /* transform: translate(-50%, -50%); */
     z-index: 2;
 }
-.lake {
-    position: absolute;
-    top: 86%;
-    /* top: calc(50% + 69px); */
-    /* left: calc(50% + 130px); */
-    left: 50%;
-    width: 100%;
-    /* height: 870px; */
-    /* transform: translate(-50%, -50%); */
-    z-index: 3;
-}
+
+/* fog cornering standalone rock */
 .fog_1 {
     position: absolute;
-    top: 157%;
-    left: 55%;
-    opacity: 0.5;
+    top: 38%;
+    left: 50%;
+    opacity: 0.2;
     width: 100%;
-    scale: 1.5;
-    /* transform: translate(-50%, -50%); */
+    scale: 0.4;
     z-index: 6;
 }
 .rock-standalone {
@@ -75,167 +60,49 @@ main {
     top: 30%;
     left: 50%;
     width: 100%;
-    scale: 0.4;
+    scale: 0.65;
     z-index: 7;
 }
 .fog_1a {
     position: absolute;
-    top: 170%;
-    left: 55%;
-    opacity: 0.5;
+    top: 50%;
+    left: 50%;
+    opacity: 0.3;
     width: 100%;
-    scale: 1.5;
-    /* transform: translate(-50%, -50%); */
+    scale: 0.4;
+    z-index: 8;
+}
+.low_wide_fog {
+    position: absolute;
+    top: 130%;
+    left: 70%;
+    scale: 1.4;
+    width: 100%;
+    opacity: 0.2;
     z-index: 8;
 }
 .gnu-mascot {
     position: absolute;
-    top: 32%;
+    top: 20%;
     left: 52%;
     width: 100%;
-    scale: 0.15;
+    scale: 0.17;
     z-index: 9;
 }
+/* .gnu-mascot:hover{
+    scale: 0.18;
+    transition: 0.45s cubic-bezier(cubic-bezier(0.215, 0.41, 0.325, 0.99));
+    cursor: pointer;
+    border: 2px solid var(--clr-green-dark);
+} */
 
 .fog_2 {
     position: absolute;
-    /* top: calc(50% + 95px); */
     top: 58%;
-    /* left: calc(50% + 117px); */
     left: 65%;
     width: 150%;
     opacity: 0.2;
-    /* height: 1833px; */
-    /* transform: translate(-50%, -50%); */
     z-index: 4;
-}
-
-.fog_3 {
-    position: absolute;
-    top: 90%;
-    left: -50%;
-    width: 100%;
-    scale: 0.3;
-    opacity: 0.6;
-    z-index: 8;
-}
-
-.mountain_6 {
-    position: absolute;
-    /* top: calc(50% + 116.5px); */
-    top: 60%;
-    /* left: calc(50% + 500px); */
-    left: 78%;
-    /* width: 583.5px; */
-    width: 28%;
-    /* height: 783.5px; */
-    /* transform: translate(-50%, -50%); */
-    z-index: 10;
-}
-
-.fog_4 {
-    position: absolute;
-    /* top: calc(50% + 242px); */
-    top: 70%;
-    /* left: calc(50% - 164px); */
-    left: 42%;
-    /* width: 653px; */
-    width: 33%;
-    opacity: 0.1;
-    /* transform: translate(-50%, -50%); */
-    z-index: 11;
-}
-
-.mountain_5 {
-    position: absolute;
-    /* top: calc(50% + 319px); */
-    top: 70%;
-    /* left: calc(50% - 90px); */
-    left: 48%;
-    /* width: 683px; */
-    width: 35%;
-    /* height: 683px; */
-    /* transform: translate(-50%, -50%); */
-    z-index: 12;
-}
-
-.fog_5 {
-    position: absolute;
-    /* top: calc(50% + 149px); */
-    top: 0;
-    /* left: calc(50% - 28px); */
-    left: 52%;
-    /* width: 1435px; */
-    width: 80%;
-    opacity: 0.05;
-    /* transform: translate(-50%, -50%); */
-    z-index: 13;
-}
-
-.mountain_4 {
-    position: absolute;
-    /* top: calc(50% + 241px); */
-    top: 78%;
-    /* left: calc(50% - 411.5px); */
-    left: 29%;
-    /* width: 917px; */
-    width: 47%;
-    /* height: 685px; */
-    /* transform: translate(-50%, -50%); */
-    z-index: 14;
-}
-
-.mountain_3 {
-    position: absolute;
-    /* top: calc(50% + 33px); */
-    top: 52%;
-    /* left: calc(50% + 676px); */
-    left: 94%;
-    /* width: 519px; */
-    width: 29%;
-    /* height: 100vh; */
-    /* transform: translate(-50%, -50%); */
-    z-index: 15;
-}
-
-/* kaam xaina */
-.fog_6 {
-    position: absolute;
-    /* top: calc(50% + 277px); */
-    top: 92%;
-    /* left: calc(50% - 330px); */
-    left: 33%;
-    /* width: 1418px; */
-    width: 73%;
-    /* height: 449px; */
-    /* transform: translate(-50%, -50%); */
-    z-index: 16;
-}
-
-.mountain_2 {
-    position: absolute;
-    /* top: calc(50% + 258px); */
-    top: 94%;
-    /* left: calc(50% + 282px); */
-    left: 60%;
-    /* width: 945px; */
-    width: 48%;
-    /* height: 535px; */
-    /* transform: translate(-50%, -50%); */
-    z-index: 17;
-}
-
-.mountain_1 {
-    position: absolute;
-    /* top: calc(50% + 71.5px); */
-    top: 55%;
-    /* left: calc(50% - 671px); */
-    left: 8%;
-    /* width: 650px; */
-    width: 33%;
-    /* height: 100vh; */
-    /* transform: translate(-50%, -50%); */
-    z-index: 18;
 }
 
 .sun_rays {
@@ -245,7 +112,7 @@ main {
     right: 0%;
     /* width: 595px; */
     width: 60%;
-    opacity: 0.1;
+    opacity: 0.2;
     pointer-events: none;
 }
 
@@ -259,17 +126,6 @@ main {
     width: 100%;
     height: 100%;
     pointer-events: none;
-}
-
-.fog_7 {
-    position: absolute;
-    z-index: 21;
-    top: calc(100% - 355px);
-    left: 50%;
-    /* width: 1600px; */
-    opacity: 0.1;
-    width: 82%;
-    /* transform: translate(-50%, -50%); */
 }
 
 .vignette {
@@ -513,12 +369,12 @@ const arrayColors = ["#eee", "#545454", "#5F6A6A", "#A6ACAF", "#2C3E50"];
 }
 
 .text h2 {
-    font-weight: 100;
-    font-size: 3.5rem;
+    font-weight: 500;
+    font-size: 0.5rem;
 }
 
 .text h1 {
-    font-weight: 800;
-    font-size: 5rem;
+    font-weight: 50;
+    font-size: 1rem;
     line-height: 0.88;
 }
