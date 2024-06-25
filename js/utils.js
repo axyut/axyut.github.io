@@ -1,80 +1,13 @@
-const sections = document.querySelectorAll(".section");
-const sectBtns = document.querySelectorAll(".controlls");
-const sectBtn = document.querySelectorAll(".control");
-const allSections = document.querySelector(".main-content");
-const screenWidth = window.screen.width;
-const sec3 = document.querySelector(".sec3");
+const port = document.querySelector(".port");
+const gnu = document.getElementById("gnu-mascot");
 
-function PageTransitions() {
-    // if screenWidth is less than 520px then show portfolio section
-    if (screenWidth < 520) {
-        const element = document.getElementById("portfolio");
-        element.classList.add("active");
-
-        const btn = document.querySelector(".control-3");
-        btn.classList.add("active-btn");
-
-        sectBtns.forEach((btn) => {
-            btn.classList.remove("active-btn");
-        });
+gnu.addEventListener("click", (e) => {
+    let style = port.style.display;
+    if (style === "flex") {
+        port.style.display = "none";
+    } else if (style === "none") {
+        port.style.display = "flex";
     } else {
-        const btn = document.querySelector(".control-1");
-        btn.classList.add("active-btn");
+        port.style.display = "flex";
     }
-
-    //Button click active class
-    for (let i = 0; i < sectBtn.length; i++) {
-        sectBtn[i].addEventListener("click", function () {
-            let currentBtn = document.querySelectorAll(".active-btn");
-            currentBtn[0].className = currentBtn[0].className.replace(
-                "active-btn",
-                ""
-            );
-            this.className += " active-btn";
-        });
-    }
-
-    //Sctions Active
-    allSections.addEventListener("click", (e) => {
-        const id = e.target.dataset.id;
-        if (id) {
-            //resmove selected from the other btns
-            sectBtns.forEach((btn) => {
-                btn.classList.remove("active");
-            });
-            e.target.classList.add("active");
-
-            //hide other sections
-            sections.forEach((section) => {
-                section.classList.remove("active");
-            });
-
-            const element = document.getElementById(id);
-            element.classList.add("active");
-            checkActive();
-        }
-    });
-}
-
-PageTransitions();
-
-// if any of the sections has class active then not fire event
-// let xValue = 0;
-// let yValue = 0;
-// let oneDoes = false;
-
-// function checkActive() {
-//     for (let i = 0; i < sections.length; i++) {
-//         const section = sections[i];
-//         oneDoes = section.classList.contains("active");
-//         // console.log(oneDoes);
-//         if (oneDoes) {
-//             break;
-//         }
-//     }
-//     return;
-// }
-// checkActive();
-// console.log(oneDoes);
-
-// not working rn, idk why
+});

@@ -16,13 +16,10 @@ main {
     position: relative;
     background-color: var(--clr-bg);
     height: 100vh;
-    overflow: hidden;
+    /* overflow: hidden; */
     width: 100%;
     z-index: 1;
 }
-/* main::-webkit-scrollbar {
-    width: 10px;
-} */
 
 .parallax {
     pointer-events: none;
@@ -67,18 +64,18 @@ main {
     position: absolute;
     top: 50%;
     left: 50%;
-    opacity: 0.3;
+    opacity: 0.4;
     width: 100%;
     scale: 0.4;
     z-index: 8;
 }
 .low_wide_fog {
     position: absolute;
-    top: 130%;
+    top: 135%;
     left: 70%;
     scale: 1.4;
     width: 100%;
-    opacity: 0.2;
+    opacity: 0.4;
     z-index: 8;
 }
 .gnu-mascot {
@@ -88,13 +85,13 @@ main {
     width: 100%;
     scale: 0.17;
     z-index: 9;
+    pointer-events: all;
 }
-/* .gnu-mascot:hover{
+.gnu-mascot:hover {
     scale: 0.18;
-    transition: 0.45s cubic-bezier(cubic-bezier(0.215, 0.41, 0.325, 0.99));
+    transition: 1s cubic-bezier(cubic-bezier(0.215, 0.41, 0.325, 0.99));
     cursor: pointer;
-    border: 2px solid var(--clr-green-dark);
-} */
+}
 
 .fog_2 {
     position: absolute;
@@ -355,15 +352,12 @@ const arrayColors = ["#eee", "#545454", "#5F6A6A", "#A6ACAF", "#2C3E50"];
 
 .text {
     position: absolute;
-    /* top: calc(50% - 130px); */
     top: 32%;
     left: 50%;
-    /* width: 2100px; */
     width: 200%;
-    /* transform: translate(-50%, -50%); */
     z-index: 9;
     text-align: center;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     pointer-events: auto;
     color: var(--clr-white);
 }
