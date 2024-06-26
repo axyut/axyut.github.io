@@ -227,7 +227,7 @@ const arrayColors = ["#eee", "#545454", "#5F6A6A", "#A6ACAF", "#2C3E50"];
     z-index: 9;
     text-align: center;
     /* text-transform: uppercase; */
-    pointer-events: auto;
+    pointer-events: all;
     color: var(--clr-white);
 }
 
@@ -240,4 +240,18 @@ const arrayColors = ["#eee", "#545454", "#5F6A6A", "#A6ACAF", "#2C3E50"];
     font-weight: 50;
     font-size: 1rem;
     line-height: 0.88;
+}
+#text_parallax {
+    margin-left: 100vw;
+    margin-top: 50vh;
+    font-weight: 50;
+    font-size: 1rem;
+    line-height: 0.88;
+    /* width: 100px; */
+    /* height: 100px; */
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    /* z-index: 100; */
+    /* pointer-events: all; */
 }
