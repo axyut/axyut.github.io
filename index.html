@@ -3,19 +3,15 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        />
+
         <link
             rel="icon"
             href="./assets/fav/favicon/favicon.ico"
             class="js-favicon"
         />
         <link rel="stylesheet" href="./css/root.css" />
-        <link rel="stylesheet" href="./css/portfolio.css" />
-        <link rel="stylesheet" href="./css/index.css" />
-        <!-- <link rel="stylesheet" href="./css/pageTransform.css" /> -->
+        <link rel="stylesheet" href="./css/responsive.css" />
+        <link rel="stylesheet" href="./css/main.css" />
         <title>manual</title>
         <script>
             window.addEventListener("load", () => {
@@ -27,10 +23,6 @@
     <body class="main-content">
         <div id="preLoader"></div>
 
-        <!-- <div class="controlls hide">
-            <div class="control control-1" data-id="home">Home</div>
-            <div class="control control-3" data-id="portfolio">Portfolio</div>
-        </div> -->
         <main class="banner">
             <div id="text_parallax">
                 <!-- <h2>Achyut</h2> -->
@@ -48,15 +40,6 @@
 
         <div class="static">
             <div class="vignette hide"></div>
-            <!-- whole page fog -->
-            <!-- <img
-                src="./assets/front-page/fog_5.png"
-                data-speedx="0.9"
-                data-speedy="0.105"
-                data-speedz="0.5"
-                data-distance="1850"
-                class="parallax fog_big_bg"
-            /> -->
 
             <img
                 src="./assets/front-page/fog_6.png"
@@ -124,18 +107,12 @@
             <iframe src="./port.html" seamless></iframe>
         </div>
 
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
-            integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"
-        ></script>
+        <script src="./assets/gsap.min.js"></script>
 
         <script src="./js/parallax.js"></script>
         <script src="./js/banner.js"></script>
         <script src="./js/stars.js"></script>
         <script src="./js/web.js"></script>
-        <script src="./js/aurora.js"></script>
         <script src="./js/utils.js"></script>
     </body>
 </html>

@@ -2,6 +2,7 @@ const parallax_el = document.querySelectorAll(".parallax");
 const main = document.querySelector("main");
 let timeline = gsap.timeline();
 
+// loading animation at the beginning with gasp
 Array.from(parallax_el)
     .filter((el) => !el.classList.contains("text"))
     .forEach((el) => {
@@ -9,41 +10,42 @@ Array.from(parallax_el)
             el,
             {
                 top: `${el.offsetHeight / 2 + +el.dataset.distance}px`,
-                duration: 2.2,
+                duration: 3,
                 ease: "power3.out",
             },
-            "1"
+            "0"
         );
     });
 
 timeline
+    // .from(
+    //     "#text_parallax",
+    //     {
+    //         y:
+    //             window.innerHeight -
+    //             document.querySelector("#text_parallax").getBoundingClientRect()
+    //                 .top +
+    //             400,
+    //         duration: 1.4,
+    //     },
+    //     "1.8"
+    // )
     .from(
-        ".text h1",
-        {
-            y:
-                window.innerHeight -
-                document.querySelector(".text h1").getBoundingClientRect().top +
-                400,
-            duration: 1.4,
-        },
-        "1.8"
-    )
-    .from(
-        ".text h2",
+        "#text_parallax",
         {
             y: -150,
             opacity: 0,
-            duration: 1.2,
+            duration: 1.5,
         },
-        "1.9"
+        "1.5"
     )
     .from(
         ".hide",
         {
             opacity: 0,
-            duration: 1.4,
+            duration: 1.5,
         },
-        "1.8"
+        "2"
     );
 
 // window.addEventListener("mousemove", (e) => {

@@ -147,20 +147,20 @@ const drawShootingStar = () => {
     shootingStar.progress += 9; // Adjust speed here
 };
 // Animate stars opacity individually
-const animateStarOpacity = () => {
-    stars.forEach((star, i) => {
-        gsap.to(star, {
-            opacity: Math.random(), // Random final opacity
-            duration: 2,
-            delay: Math.random() * 2, // Random delay for each star
-            ease: "power3.out",
-            // onUpdate: () => {
-            //     // Force redraw on each update
-            //     drawStars();
-            // },
-        });
-    });
-};
+// const animateStarOpacity = () => {
+//     stars.forEach((star, i) => {
+//         gsap.to(star, {
+//             opacity: Math.random(), // Random final opacity
+//             duration: 2,
+//             delay: Math.random() * 2, // Random delay for each star
+//             ease: "power3.out",
+//             // onUpdate: () => {
+//             //     // Force redraw on each update
+//             //     drawStars();
+//             // },
+//         });
+//     });
+// };
 
 createStars();
 animateStars();
