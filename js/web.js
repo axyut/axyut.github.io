@@ -137,20 +137,20 @@ const handleHoverEffects = () => {
         }
     });
 
-    if (hoveredDot) {
-        // Create and position the portfolio label inside the enlarged white dot
-        let label = document.createElement("div");
-        label.className = "portfolio-label";
-        label.textContent = "Portfolio";
-        label.style.left = `${hoveredDot.x}px`; // Center the label horizontally
-        label.style.top = `${hoveredDot.y}px`; // Center the label vertically
-        banner.appendChild(label);
-    } else {
-        // Remove any existing portfolio labels
-        document
-            .querySelectorAll(".portfolio-label")
-            .forEach((label) => label.remove());
-    }
+    // if (hoveredDot) {
+    //     // Create and position the portfolio label inside the enlarged white dot
+    //     let label = document.createElement("div");
+    //     label.className = "portfolio-label";
+    //     label.textContent = "Portfolio";
+    //     label.style.left = `${hoveredDot.x}px`; // Center the label horizontally
+    //     label.style.top = `${hoveredDot.y}px`; // Center the label vertically
+    //     banner.appendChild(label);
+    // } else {
+    //     // Remove any existing portfolio labels
+    //     document
+    //         .querySelectorAll(".portfolio-label")
+    //         .forEach((label) => label.remove());
+    // }
 };
 
 // Function to animate the dots

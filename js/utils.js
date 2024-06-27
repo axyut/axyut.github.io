@@ -17,7 +17,7 @@ gnu.addEventListener("click", (e) => {
 });
 
 gnu.onmousemove = (e) => {
-    axyut.textContent = "🤤*BONK* me! >:(";
+    axyut.textContent = "*BONK* me! >:(";
 };
 
 gnu.onmouseout = (e) => {
@@ -25,7 +25,7 @@ gnu.onmouseout = (e) => {
 };
 
 axyut.onmouseenter = (e) => {
-    axyut.textContent = "😘*BONK* that mascot >:(";
+    axyut.textContent = "💫*BONK* that mascot >:(";
 };
 
 axyut.onmouseleave = (e) => {
