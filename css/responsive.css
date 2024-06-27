@@ -58,6 +58,7 @@
     .port {
         left: 25%;
         width: 50%;
+        display: none;
         top: 0;
     }
 }
@@ -119,6 +120,7 @@
     }
 
     .port {
+        display: none;
         left: 25%;
         width: 50%;
     }
@@ -181,6 +183,7 @@
     }
 
     .port {
+        display: none;
         left: 22%;
         width: 56%;
     }
@@ -244,6 +247,7 @@
     }
 
     .port {
+        display: none;
         left: 20%;
         width: 60%;
     }
@@ -307,6 +311,7 @@
     }
 
     .port {
+        display: none;
         left: 20%;
         width: 70%;
     }
@@ -352,6 +357,7 @@
         opacity: 0;
     }
     .port {
+        display: none;
         left: 15%;
         width: 75%;
     }
@@ -393,6 +399,7 @@
         left: 55%;
     }
     .port {
+        display: none;
         left: 10%;
         width: 80%;
     }
@@ -401,6 +408,7 @@
 @media (max-width: 520px) {
     .gnu-mascot {
         scale: 0.6;
+        display: none;
         top: 70%;
         left: 55%;
     }
@@ -408,34 +416,41 @@
     .rock-hills {
         scale: 1.7;
         top: 85%;
+        display: none;
         left: 40%;
     }
 
     .fog_1 {
         scale: 1;
         top: 90%;
+        display: none;
         left: 50%;
     }
 
     .rock-standalone {
         scale: 2;
         top: 84%;
+        display: none;
         left: 50%;
     }
     .fog_1a {
         scale: 1;
         top: 105%;
+        display: none;
         left: 50%;
     }
     .low_wide_fog {
         scale: 1.5;
         top: 108%;
+        display: none;
         left: 55%;
     }
     .fog_2 {
+        display: none;
         opacity: 0;
     }
     .port {
+        display: flex;
         left: 5%;
         width: 95%;
     }
@@ -471,6 +486,7 @@
         left: 50%;
     }
     .port {
+        display: flex;
         left: 0%;
         width: 100%;
     }

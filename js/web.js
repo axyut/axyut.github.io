@@ -152,42 +152,43 @@ const handleHoverEffects = () => {
     //         .forEach((label) => label.remove());
     // }
 };
+if (window.innerWidth > 520) {
+    // Function to animate the dots
+    const animateDots = () => {
+        updateDots();
+        drawDots();
+        drawDotLines(); // Draw lines between dots
+        drawMouseLines(); // Draw lines from mouse to dots
+        handleHoverEffects(); // Handle hover effects on white dots
+        requestAnimationFrame(animateDots);
+    };
 
-// Function to animate the dots
-const animateDots = () => {
-    updateDots();
+    // Event listeners for mouse interaction
+    banner.addEventListener("mousemove", (e) => {
+        const bannerOffset = getBannerOffset();
+        mouse.x = e.pageX - bannerOffset.left;
+        mouse.y = e.pageY - bannerOffset.top;
+    });
+
+    banner.addEventListener("mouseout", () => {
+        mouse.x = null;
+        mouse.y = null;
+        drawDots();
+        document
+            .querySelectorAll(".portfolio-label")
+            .forEach((label) => label.remove()); // Remove the portfolio label when mouse is out
+    });
+
+    window.addEventListener("resize", () => {
+        canvas.width = banner.offsetWidth;
+        canvas.height = banner.offsetHeight;
+        dots.length = 0; // Clear the dots array
+        createDots(); // Recreate dots
+        drawDots(); // Redraw dots
+    });
+
+    // Initialize dots and start animation
+    createDots();
     drawDots();
-    drawDotLines(); // Draw lines between dots
-    drawMouseLines(); // Draw lines from mouse to dots
-    handleHoverEffects(); // Handle hover effects on white dots
-    requestAnimationFrame(animateDots);
-};
-
-// Event listeners for mouse interaction
-banner.addEventListener("mousemove", (e) => {
-    const bannerOffset = getBannerOffset();
-    mouse.x = e.pageX - bannerOffset.left;
-    mouse.y = e.pageY - bannerOffset.top;
-});
-
-banner.addEventListener("mouseout", () => {
-    mouse.x = null;
-    mouse.y = null;
-    drawDots();
-    document
-        .querySelectorAll(".portfolio-label")
-        .forEach((label) => label.remove()); // Remove the portfolio label when mouse is out
-});
-
-window.addEventListener("resize", () => {
-    canvas.width = banner.offsetWidth;
-    canvas.height = banner.offsetHeight;
-    dots.length = 0; // Clear the dots array
-    createDots(); // Recreate dots
-    drawDots(); // Redraw dots
-});
-
-// Initialize dots and start animation
-createDots();
-drawDots();
-animateDots();
+    animateDots();
+}

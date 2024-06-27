@@ -18,6 +18,10 @@ main {
     height: 100vh;
     width: 100%;
     z-index: 1;
+    overflow: hidden;
+}
+.static {
+    overflow: hidden;
 }
 
 .parallax {
@@ -130,6 +134,7 @@ main {
     width: 180vw;
     margin-left: -40vw;
     margin-top: -10vh;
+    overflow: hidden;
 }
 
 #text_parallax {
@@ -143,13 +148,13 @@ main {
 
 /* manual frame css */
 .port {
-    display: none;
     position: absolute;
     top: 0;
     background: transparent;
     color: #69b15e;
     height: 100%;
     z-index: 1;
+    overflow: hidden;
     /* determines lines of web + scroll not working with this on rn*/
     /* pointer-events: none; */
 }

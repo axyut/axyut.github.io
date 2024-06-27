@@ -161,7 +161,6 @@ const drawShootingStar = () => {
 //         });
 //     });
 // };
-
 createStars();
 animateStars();
 animateStarOpacity();
