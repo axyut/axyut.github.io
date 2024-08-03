@@ -11,8 +11,8 @@ gnu.addEventListener("click", (e) => {
         port.style.display = "flex";
         axyut.style.display = "none";
     } else {
-        port.style.display = "flex";
-        axyut.style.display = "none";
+        port.style.display = "none";
+        axyut.style.display = "inline-block";
     }
 });
 
@@ -41,7 +41,7 @@ axyut.addEventListener("click", (e) => {
         port.style.display = "flex";
         axyut.style.display = "none";
     } else {
-        port.style.display = "flex";
-        axyut.style.display = "none";
+        port.style.display = "none";
+        axyut.style.display = "inline-block";
     }
 });
