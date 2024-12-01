@@ -1,0 +1,629 @@
+{
+  "basics": {
+    "name": "Achyut Koirala",
+    "headline": "Backend Developer",
+    "email": "mail@axyut.me",
+    "phone": "+977 9865195568",
+    "location": "Kathmandu, Nepal",
+    "url": {
+      "label": "Portfolio",
+      "href": "https://axyut.me"
+    },
+    "customFields": [],
+    "picture": {
+      "url": "https://storage.rxresu.me/clzexgxt962rovrn38rdcoxqx/pictures/clzexgxt962rovrn38rdcoxqx.jpg",
+      "size": 64,
+      "aspectRatio": 1,
+      "borderRadius": 0,
+      "effects": {
+        "hidden": true,
+        "border": false,
+        "grayscale": false
+      }
+    }
+  },
+  "sections": {
+    "summary": {
+      "name": "",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": true,
+      "id": "summary",
+      "content": "<p>I consider myself a responsible and Career-oriented person. I’m currently seeking an opportunity to apply and sharpen my skills against challenging tasks. Back-end Development and Digital Forensics really excites me</p>"
+    },
+    "awards": {
+      "name": "Honors & Recognition",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": true,
+      "id": "awards",
+      "items": [
+        {
+          "id": "t9b8mwsjfctvug0kafkwsk6m",
+          "visible": true,
+          "title": "Employee of the Month",
+          "awarder": "",
+          "date": "Sep 2023",
+          "summary": "<p>I received this award on my first-ever professional experience &amp; made a significant impact at Hyperce. It justifies the commitment and passion I put into learning new technologies.</p>",
+          "url": {
+            "label": "Award | Hyperce",
+            "href": "https://www.linkedin.com/posts/axyut_thank-you-hyperce-for-providing-this-opportunity-activity-7133389255405428736-0N4L?utm_source=share&utm_medium=member_desktop"
+          }
+        }
+      ]
+    },
+    "certifications": {
+      "name": "Certifications",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": true,
+      "id": "certifications",
+      "items": [
+        {
+          "id": "j1vom7j4yx6js3bw85r1kqer",
+          "visible": false,
+          "name": "Microsoft Certified: Azure Fundamentals ",
+          "issuer": "",
+          "date": "Feb 2023",
+          "summary": "",
+          "url": {
+            "label": "Microsoft, credly",
+            "href": "https://www.credly.com/badges/fcf553be-73ce-4e10-b13e-9e9323044e8f/public_url"
+          }
+        },
+        {
+          "id": "sxkpbwjcgxinwtcx5ly29fmn",
+          "visible": true,
+          "name": "API Penetration Testing: Certified",
+          "issuer": "",
+          "date": "Oct 2023",
+          "summary": "",
+          "url": {
+            "label": "APISEC University, credly",
+            "href": "https://www.credly.com/go/M6ak16H6"
+          }
+        },
+        {
+          "id": "wz9kyngw7d1q741dimjtkfbh",
+          "visible": true,
+          "name": "Other Certifications",
+          "issuer": "",
+          "date": "",
+          "summary": "<p><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.coursera.org/account/accomplishments/specialization/certificate/2UC38HAAS6QO\">Google Cybersecurity</a> | CS50x | FreeCodeCamp | AWS CPE | IBM’s Project Management | Microsoft: AZ900 | <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.linkedin.com/in/axyut/details/certifications/\">All</a></p>",
+          "url": {
+            "label": "Verify, linkedin",
+            "href": ""
+          }
+        }
+      ]
+    },
+    "education": {
+      "name": "Education",
+      "columns": 1,
+      "separateLinks": false,
+      "visible": true,
+      "id": "education",
+      "items": [
+        {
+          "id": "v2v4dxla4fi5ndiz14boen1f",
+          "visible": true,
+          "institution": "Tribhuvan University",
+          "studyType": "Student Leader | BOSC",
+          "area": "Bachelors in Information Technology",
+          "score": "",
+          "date": "Jan 2022 - 2026",
+          "summary": "<p>MERN Stack workshop Training, Presentation and Participation in Hackathons.</p>",
+          "url": {
+            "label": "",
+            "href": "https://iost.tu.edu.np/"
+          }
+        }
+      ]
+    },
+    "experience": {
+      "name": "Experience",
+      "columns": 1,
+      "separateLinks": false,
+      "visible": true,
+      "id": "experience",
+      "items": [
+        {
+          "id": "opkh7nsus9itfh2mav0786ig",
+          "visible": true,
+          "company": "Freelance",
+          "position": "API Engineer | Tester",
+          "location": "Remote, onsite",
+          "date": "Jan 2024 - Present",
+          "summary": "<p>Solo completed various projects as I worked with technologies like Typescript, Go, NATS, RabbitMQ, HTMX, Testing GraphQL, REST, gRPCs and learned time management, project management and interpersonal skills.</p><ul><li><p>Communication with Client on GitHub Issues and Bug Fixes.</p></li><li><p>Identifying and reporting Security vulnerabilities and bug bounty hunting.</p></li></ul>",
+          "url": {
+            "label": "",
+            "href": "https://www.upwork.com/freelancers/~01889fb9974fe59ec2"
+          }
+        },
+        {
+          "id": "bthvdzoa4nap4qimda9hm94e",
+          "visible": true,
+          "company": "Birendra Open Source Club | BOSC",
+          "position": "President ",
+          "location": "Chitwan, Nepal",
+          "date": "July 2023 - Present",
+          "summary": "<p>Leading a student-driven tech community focused on promoting Free and Open Source Software (FOSS). Responsible for strategic planning, mentoring members, organizing workshops, and fostering collaborations to empower students.</p><ul><li><p>Organized 30+ Free events, workshops, and hackathons that reached 1000+ audience across Nepal.</p></li><li><p><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://bosc.org.np/blogs/24/\">Software Freedom Day 2024</a>, <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://bosc.org.np/blogs/26/\">Hacktoberfest 2024</a>, <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://bosc.org.np/blogs/28/\">Career Guidance</a>.</p></li></ul>",
+          "url": {
+            "label": "Website",
+            "href": "https://bosc.org.np"
+          }
+        },
+        {
+          "id": "wsxw2twmfuffvwa803bp7bt4",
+          "visible": true,
+          "company": "Hyperce",
+          "position": "Back-end Developer, Intern",
+          "location": "Remote",
+          "date": "Aug 2023 - Oct",
+          "summary": "<p>At Hyperce, I worked with technologies like Vendure, GraphQL, Typescript, Angular and TypeORM and learned internal mechanisms of the e-commerce industry as well as scaling of a tech-startup.</p><ul><li><p>Developed, Implemented and Tested APIs onto different backend services.</p></li><li><p>Configured Algolia, Typesense and ElasticSearch.</p></li></ul>",
+          "url": {
+            "label": "",
+            "href": "https://hyperce.io"
+          }
+        },
+        {
+          "id": "jdbqu5edv1nafu28wmnjb6qk",
+          "visible": true,
+          "company": "ACET",
+          "position": "Jr Hardware Technician",
+          "location": "Onsite",
+          "date": "May 2019 - Aug",
+          "summary": "<p>ACET helped me gain In-depth knowledge of system design, troubleshooting computers, Linux and bash, configuring Networks, and Backup/Recovery of files and systems.</p>",
+          "url": {
+            "label": "",
+            "href": ""
+          }
+        }
+      ]
+    },
+    "volunteer": {
+      "name": "Volunteering",
+      "columns": 1,
+      "separateLinks": false,
+      "visible": false,
+      "id": "volunteer",
+      "items": [
+        {
+          "id": "ah2u6vctjzlvegtb04h1cgbi",
+          "visible": true,
+          "organization": "Postman",
+          "position": "Student Leader",
+          "location": "Remote",
+          "date": "Sep 2024 - Present",
+          "summary": "",
+          "url": {
+            "label": "",
+            "href": "https://www.postman.com/student-program/student-leader/"
+          }
+        },
+        {
+          "id": "nw6wneey7njlzt3a4ldtkxq8",
+          "visible": true,
+          "organization": "GitHub",
+          "position": "Campus Expert",
+          "location": "Remote",
+          "date": "Sep 2024 - Present",
+          "summary": "",
+          "url": {
+            "label": "",
+            "href": "https://education.github.com/campus_experts"
+          }
+        },
+        {
+          "id": "xn4eqx3ofisd7vfzvdgtwv0b",
+          "visible": true,
+          "organization": "Microsoft",
+          "position": "Student Ambassador",
+          "location": "Remote",
+          "date": "Sep 2024 - Present",
+          "summary": "",
+          "url": {
+            "label": "",
+            "href": "https://mvp.microsoft.com/studentambassadors"
+          }
+        }
+      ]
+    },
+    "interests": {
+      "name": "Interests",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": false,
+      "id": "interests",
+      "items": [
+        {
+          "id": "ldny93b85yglgvzjx01w2dqc",
+          "visible": true,
+          "name": "Indoors",
+          "keywords": [
+            "chess"
+          ]
+        }
+      ]
+    },
+    "languages": {
+      "name": "Languages",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": true,
+      "id": "languages",
+      "items": []
+    },
+    "profiles": {
+      "name": "",
+      "columns": 4,
+      "separateLinks": true,
+      "visible": true,
+      "id": "profiles",
+      "items": [
+        {
+          "id": "vg6aa351m79tfcwf7g9oe5t8",
+          "visible": true,
+          "network": "LinkedIn",
+          "username": "axyut",
+          "icon": "linkedin",
+          "url": {
+            "label": "",
+            "href": "https://linkedin.com/in/axyut"
+          }
+        },
+        {
+          "id": "c9ipm734y4u0l4cerdqwbyzj",
+          "visible": true,
+          "network": "GitHub",
+          "username": "axyut",
+          "icon": "github",
+          "url": {
+            "label": "",
+            "href": "https://github.com/axyut"
+          }
+        },
+        {
+          "id": "ea8whog4gkvpjav39s83jwi2",
+          "visible": false,
+          "network": "GitLab",
+          "username": "axyut",
+          "icon": "gitlab",
+          "url": {
+            "label": "",
+            "href": "https://gitlab.com/axyut"
+          }
+        },
+        {
+          "id": "rnhi8bue9pfdnq3cjyt3ee1l",
+          "visible": true,
+          "network": "X",
+          "username": "axyut",
+          "icon": "x",
+          "url": {
+            "label": "",
+            "href": "https://x.com/achyut_koirala_"
+          }
+        }
+      ]
+    },
+    "projects": {
+      "name": "Projects",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": true,
+      "id": "projects",
+      "items": [
+        {
+          "id": "jur37wlnhm73kgmr9w7ikepn",
+          "visible": true,
+          "name": "Go",
+          "description": "",
+          "date": "Oct 2023 - Present",
+          "summary": "",
+          "keywords": [],
+          "url": {
+            "label": "CLI Music Player, APIs, HTMX Commerce",
+            "href": "https://achyutkoirala.com.np/cold"
+          }
+        },
+        {
+          "id": "h5ibejgv6cmtefc2srjv357a",
+          "visible": true,
+          "name": "Node",
+          "description": "",
+          "date": "Jan 2022 - Present",
+          "summary": "",
+          "keywords": [],
+          "url": {
+            "label": "Vanarakshak | Applicant Tracking System | Phishing app | APIs, GitHub",
+            "href": "https://github.com/axyut/vanarakshak-osm"
+          }
+        },
+        {
+          "id": "s9yl9jif10jzwvvt0se15v8f",
+          "visible": true,
+          "name": "Microservices",
+          "description": "",
+          "date": "May 2023 - June 2024",
+          "summary": "",
+          "keywords": [],
+          "url": {
+            "label": "Ticket Booking App",
+            "href": "https://github.com/axyut/ticket_booking_app"
+          }
+        },
+        {
+          "id": "urfdyyo8v63kprxkc5vpytpb",
+          "visible": true,
+          "name": "Other",
+          "description": "",
+          "date": "Jan 2024 - Present",
+          "summary": "<p>Contributing to Open Source Technologies (<a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://github.com/PoskOfficial/Miti/commit/6de66ffa9ec693c692b2e67009353e9ced42f5ac\">Miti</a>, <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://github.com/b0sc\">Bosc</a>).</p>",
+          "keywords": [],
+          "url": {
+            "label": "CTFs writeups",
+            "href": "https://axyut.github.io/writeups"
+          }
+        }
+      ]
+    },
+    "publications": {
+      "name": "Publications",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": true,
+      "id": "publications",
+      "items": []
+    },
+    "references": {
+      "name": "References",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": true,
+      "id": "references",
+      "items": []
+    },
+    "skills": {
+      "name": "Skills",
+      "columns": 2,
+      "separateLinks": true,
+      "visible": true,
+      "id": "skills",
+      "items": [
+        {
+          "id": "n6yow5ouycjouw6mmprb3x1i",
+          "visible": true,
+          "name": "Frontend | Backend",
+          "description": "",
+          "level": 0,
+          "keywords": [
+            "React",
+            "Astro",
+            "HTMX",
+            "Angular",
+            "Go",
+            "Node.js",
+            "Typescript",
+            "PHP",
+            "Zig",
+            "C/C++"
+          ]
+        },
+        {
+          "id": "dh1vwqb5xjyxkgoiddtpgtxn",
+          "visible": false,
+          "name": "Back-end",
+          "description": "",
+          "level": 0,
+          "keywords": [
+            "Node",
+            "Go",
+            "PHP",
+            "C/C++",
+            "Zig",
+            "REST",
+            "GraphQL",
+            "rpc"
+          ]
+        },
+        {
+          "id": "bet9brs4rugtvqq8yb5nbcy1",
+          "visible": true,
+          "name": "Soft skills",
+          "description": "",
+          "level": 0,
+          "keywords": [
+            "Project Management",
+            "Report Writing",
+            "Presentation",
+            "Communication"
+          ]
+        },
+        {
+          "id": "kucwmqcfiy30qjjmjd1p6h65",
+          "visible": true,
+          "name": "Database | APIs",
+          "description": "",
+          "level": 0,
+          "keywords": [
+            "postgreSQL",
+            "mySQL",
+            "redis",
+            "mongo",
+            "maria",
+            "REST",
+            "GraphQL",
+            "gRPC"
+          ]
+        },
+        {
+          "id": "bnepie17uzlkwidf81teg4s8",
+          "visible": true,
+          "name": "Languages",
+          "description": "",
+          "level": 0,
+          "keywords": [
+            "Nepal",
+            "English",
+            "Hindi"
+          ]
+        },
+        {
+          "id": "pi89n3u3bwsmy8l7mtad3ewv",
+          "visible": false,
+          "name": "Ops",
+          "description": "",
+          "level": 0,
+          "keywords": [
+            "GitHub Actions",
+            "Postman",
+            "docker"
+          ]
+        },
+        {
+          "id": "hpsv40hpn2xl3xaykc8zb9x2",
+          "visible": true,
+          "name": "Security | Ops",
+          "description": "",
+          "level": 0,
+          "keywords": [
+            "Manual Testing",
+            "QA",
+            "Burp",
+            "API Pen-testing",
+            "docker",
+            "CI/CD",
+            "Postman"
+          ]
+        },
+        {
+          "id": "pbdio1h3aclplznp7wlduqbn",
+          "visible": true,
+          "name": "Other",
+          "description": "",
+          "level": 0,
+          "keywords": [
+            "Troubleshooting",
+            "Web-Socket",
+            "Arduino",
+            "nats",
+            "rabbitmq"
+          ]
+        }
+      ]
+    },
+    "custom": {
+      "o6u40eegshzgykom02cgygji": {
+        "name": "Activities",
+        "columns": 1,
+        "separateLinks": false,
+        "visible": true,
+        "id": "o6u40eegshzgykom02cgygji",
+        "items": [
+          {
+            "id": "f44xngrfh29rj9dfj93r9g3y",
+            "visible": true,
+            "name": "GitHub Field Day Nepal",
+            "description": "50+ Student Leaders | 40+ Tech Communities",
+            "date": "Nov 2024",
+            "location": "German Homes, Bhaktapur",
+            "summary": "<p>Networked with Genius Minds from all over Nepal, Brainstormed new ideas and solutions to address the challenges that exists in our community. Participated in Fun Games and Sessions. <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://drive.google.com/file/d/1JidCzc2Oqbs4i9JZOitY1rOQ1ZBaWPBB/view?usp=sharing\">Certificate</a></p>",
+            "keywords": [
+              "Git Seminars",
+              "Open source talks",
+              "unconference",
+              "Networking",
+              "GitHub Campus Experts"
+            ],
+            "url": {
+              "label": "b0sc.com",
+              "href": "https://githubfieldday.com/np2024/"
+            }
+          },
+          {
+            "id": "fvv8fwna4kuahmubdo88qa9w",
+            "visible": true,
+            "name": "Gajabaar 2023 Summer Mentorship Program",
+            "description": "Application Security",
+            "date": "May 2023 - June",
+            "location": "Remote",
+            "summary": "<p>This 3 months long mentorship helped me learn the basics of OWASP’s Top 10 vulnerabilities to solving HTB Labs, OpenVAS, Cryptopals and Pwn college’s challenges. <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://drive.google.com/file/d/1t-qjmv27WcqoC2onZqWeB1sZA3vjDDmO/view\">Certificate</a></p>",
+            "keywords": [
+              "API Testing",
+              "VAPT",
+              "CTF",
+              "Cyber security"
+            ],
+            "url": {
+              "label": "Accomplishment",
+              "href": "https://gajabaar.io/"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "metadata": {
+    "template": "onyx",
+    "layout": [
+      [
+        [
+          "profiles",
+          "summary",
+          "experience",
+          "education"
+        ],
+        [
+          "skills",
+          "certifications",
+          "publications",
+          "languages"
+        ]
+      ],
+      [
+        [
+          "awards",
+          "custom.o6u40eegshzgykom02cgygji",
+          "interests"
+        ],
+        [
+          "projects",
+          "volunteer",
+          "references"
+        ]
+      ]
+    ],
+    "css": {
+      "value": ".section {\n\toutline: 1px solid #000;\n\toutline-offset: 4px;\n}",
+      "visible": false
+    },
+    "page": {
+      "margin": 30,
+      "format": "a4",
+      "options": {
+        "breakLine": true,
+        "pageNumbers": false
+      }
+    },
+    "theme": {
+      "background": "#ffffff",
+      "text": "#000000",
+      "primary": "#4f46e5"
+    },
+    "typography": {
+      "font": {
+        "family": "PT Sans",
+        "subset": "latin",
+        "variants": [
+          "regular"
+        ],
+        "size": 14
+      },
+      "lineHeight": 1.2,
+      "hideIcons": false,
+      "underlineLinks": false
+    },
+    "notes": ""
+  }
+}
