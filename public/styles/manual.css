@@ -26,12 +26,12 @@
 }
 
 /* style: man */
-body#manpage {
+#manpage {
   margin: 0;
 }
 .mp {
   max-width: 100ex;
-  padding: 0 9ex 1ex 4ex;
+  padding: 0 2ex;
 }
 .mp p,
 .mp pre,
@@ -51,7 +51,7 @@ body#manpage {
   margin-left: 8ex;
 }
 .mp h3 {
-  margin: 0 0 0 4ex;
+  margin: 0;
 }
 .mp dt {
   margin: 0;
@@ -196,4 +196,11 @@ ol.man-decor li.tc {
 ol.man-decor li.tr {
   text-align: right;
   float: right;
+}
+
+/* screen size less than 385 pixel */
+@media screen and (max-width: 385px) {
+  ol.man-decor li {
+    font-size: x-small;
+  }
 }

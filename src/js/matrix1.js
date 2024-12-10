@@ -1,16 +1,18 @@
 const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg")
 svg.setAttribute("width", "100%")
 svg.setAttribute("height", "100%")
-document.getElementById("container").appendChild(svg)
+document.getElementById("svg-background").appendChild(svg)
 
-const DEFAULT_WORD_COUNT = 300
-const MIN_DURATION = 2
+document.getElementById("svg-background").style.opacity = 0.5
+const DEFAULT_WORD_COUNT = 250
+const MIN_DURATION = 4
 const MAX_DURATION = 10
 const MIN_FONTSIZE = 10
-const MAX_FONTSIZE = 60
+const MAX_FONTSIZE = 40
 const getRandomNumber = (min, max) => () =>
   Math.floor(Math.random() * (max - min) + min)
-const windowHeight = window.innerHeight
+// const windowHeight = window.innerHeight // animate upto the window height
+const windowHeight = document.getElementById("svg-background").clientHeight // animate the whole height of the svg background
 const windowWidth = window.innerWidth
 const numRows = 30 // Number of rows in animation
 const getNewWordLen = getRandomNumber(6, 10)
