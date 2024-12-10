@@ -6,6 +6,7 @@ enum Type {
   instagram = "Instagram",
   email = "Email",
   titok = "TikTok",
+  telegram = "Telegram",
 }
 
 const socials = [
@@ -27,10 +28,16 @@ const socials = [
     icon: "assets/svg/icons/linkedin.svg",
     color: "bg-sky-700",
   },
+  // {
+  //   name: Type.twitter,
+  //   url: "https://x.com/achyut_koirala_",
+  //   icon: "assets/svg/icons/x.svg",
+  //   color: "bg-gray-800",
+  // },
   {
-    name: Type.twitter,
-    url: "https://x.com/achyut_koirala_",
-    icon: "assets/svg/icons/x.svg",
+    name: Type.telegram,
+    url: "https://t.me/axyut",
+    icon: "assets/svg/icons/telegram.svg",
     color: "bg-gray-800",
   },
 ]
@@ -66,7 +73,7 @@ const getClass = (type: Type) =>
     })
   }
 </div>
-<div class="grid grid-cols-1 gap-3 duration-500 md:grid-flow-col md:gap-2">
+<!-- <div class="grid grid-cols-1 gap-3 duration-500 md:grid-flow-col md:gap-2">
   <a
     class="scale-100 p-2 rounded-full border-2 border-gray-950 transition duration-300 hover:scale-110 animate-zoom-in"
     href="/resume.json"
@@ -75,4 +82,4 @@ const getClass = (type: Type) =>
   >
     RESUME
   </a>
-</div>
+</div> -->
