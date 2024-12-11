@@ -1,3 +1,28 @@
 body::-webkit-scrollbar {
   width: 0px;
 }
+
+body {
+  background-color: black;
+}
+
+.show {
+  -webkit-animation: scaleAnim 1s ease-in-out;
+  animation: scaleAnim 1s ease-in-out;
+}
+@-webkit-keyframes scaleAnim {
+  0% {
+    transform: translateY(-100%) scaleY(0);
+  }
+  100% {
+    transform: translateY(0) scaleY(1);
+  }
+}
+@keyframes scaleAnim {
+  0% {
+    transform: translateY(-100%) scaleY(0);
+  }
+  100% {
+    transform: translateY(0) scaleY(1);
+  }
+}

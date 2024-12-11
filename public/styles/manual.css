@@ -3,35 +3,13 @@
   font-size: larger;
 }
 
-/* .active {
-  -webkit-animation: scaleAnim 1s ease-in-out;
-  animation: scaleAnim 1s ease-in-out;
-} */
-
-@-webkit-keyframes scaleAnim {
-  0% {
-    transform: translateY(-100%) scaleY(0);
-  }
-  100% {
-    transform: translateY(0) scaleY(1);
-  }
-}
-@keyframes scaleAnim {
-  0% {
-    transform: translateY(-100%) scaleY(0);
-  }
-  100% {
-    transform: translateY(0) scaleY(1);
-  }
-}
-
 /* style: man */
 #manpage {
   margin: 0;
 }
 .mp {
   max-width: 100ex;
-  padding: 0 2ex;
+  padding: 0;
 }
 .mp p,
 .mp pre,
@@ -39,6 +17,7 @@
 .mp ol,
 .mp dl {
   margin: 0 0 20px 0;
+  margin-right: 10px;
 }
 .mp h2 {
   margin: 10px 0 0 0;
@@ -177,7 +156,6 @@ ol.man-decor li {
   margin: 3px 0 10px 0;
   padding: 0;
   float: left;
-  width: 33%;
   list-style-type: none;
   text-transform: uppercase;
   color: #999;
@@ -186,21 +164,38 @@ ol.man-decor li {
 ol.man-decor {
   width: 100%;
 }
+ol.man-decor li a {
+  color: red;
+  text-decoration: none;
+}
 ol.man-decor li.tl {
+  width: 40%;
   text-align: left;
 }
 ol.man-decor li.tc {
+  width: 20%;
   text-align: center;
   letter-spacing: 4px;
 }
 ol.man-decor li.tr {
+  width: 40%;
   text-align: right;
   float: right;
 }
 
 /* screen size less than 385 pixel */
-@media screen and (max-width: 385px) {
+@media screen and (max-width: 500px) {
   ol.man-decor li {
+    margin: 0;
+    padding: 0;
     font-size: x-small;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  ol.man-decor li {
+    margin: 0;
+    padding: 0;
+    font-size: xx-small;
   }
 }
