@@ -164,7 +164,11 @@ ol.man-decor li {
 ol.man-decor {
   width: 100%;
 }
-ol.man-decor li a {
+#makered {
+  color: #ff0000;
+  text-decoration: none;
+}
+#makered1 {
   color: #ff0000;
   text-decoration: none;
 }
